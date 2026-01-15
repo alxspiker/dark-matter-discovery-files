@@ -183,7 +183,7 @@ This definitively addresses the pseudo-replication critique - the effect is real
 
 A deeper critique argues that the "phase transition" may simply reflect that outer regions have higher velocities than inner regions (a smooth monotonic relationship), rather than a true discontinuity/kink at x=1.0. To address this, we conducted five rigorous tests specifically designed to detect a **genuine breakpoint** rather than just "outer > inner."
 
-**Test Results Summary:**
+**Initial Test Results (Mean-Jump Based):**
 
 | Test | Description | Result | Verdict |
 |------|-------------|--------|---------|
@@ -193,48 +193,60 @@ A deeper critique argues that the "phase transition" may simply reflect that out
 | 4. Threshold Sweep | Find where effect peaks | Peak at 0.50, not 1.0 | ❌ FAIL |
 | 5. Sign Robustness | Fraction positive + bootstrap CI | 94.7% positive, CI excludes 0 | ✅ PASS |
 
-**Detailed Findings:**
+### 3.9 Upgraded Analysis: ΔAIC-Based Controls and Kink vs Curvature
 
-**Test 1 - Breakpoint Model Comparison:**
-- Compared smooth linear fit vs piecewise linear with break at x=1.0
-- Piecewise model wins in **125/165 galaxies (75.8%)** by AIC
-- Mean ΔAIC = 15.55 (strongly favoring piecewise)
-- Wilcoxon p-value: **5.6 × 10⁻²⁰**
+A key criticism of the initial rigorous tests was that Tests 3-4 measured "outer > inner" using mean-jump scores, which are not specific to breakpoint detection. We upgraded the analysis to use **ΔAIC-based controls** and added a critical test: **piecewise (kink) vs quadratic (smooth curvature)**.
 
-**Test 2 - Local Jump Test:**
-- Used only points in narrow band: 0.85 ≤ x < 1.0 vs 1.0 ≤ x ≤ 1.15
-- 95 galaxies had data in both bands
-- Mean local jump: +0.133, Median: +0.112
-- **93.7%** of galaxies showed positive jump
-- Wilcoxon p-value: **8.1 × 10⁻¹⁷**
+**Upgraded Test Results:**
 
-**Test 3 - Random Threshold Controls:**
-- Compared mean jump at x=1.0 vs 1000 random thresholds
-- Score at x=1.0: 0.573 (91st percentile of random distribution)
-- Z-score: 1.63 (not significant at α=0.05)
-- **Implication**: The threshold 1.0 is good but not uniquely special
+| Test | Description | Result | Verdict |
+|------|-------------|--------|---------|
+| 1. Piecewise vs Linear @ x=1.0 | ΔAIC comparison | Piecewise wins 75.8% | ✅ PASS |
+| 2. Local Jump (±0.15 band) | Narrow band test | 93.7% positive, p < 10⁻¹⁷ | ✅ PASS |
+| 3. ΔAIC Rank of x=1.0 | Is x=1.0 special among random breakpoints? | 49th percentile | ❌ FAIL |
+| 4. Best Breakpoint Distribution | Where does ΔAIC peak per galaxy? | Mean = 1.17 | ⚠️ PARTIAL |
+| 5. Piecewise vs Quadratic | Kink vs smooth curvature (both 3 params) | Quadratic wins 61.2% | ❌ FAIL |
+| 6. Sign Robustness | Fraction positive + bootstrap CI | 94.7% positive, CI excludes 0 | ✅ PASS |
 
-**Test 4 - Threshold Sweep:**
-- Swept thresholds from 0.5 to 1.5
-- Peak effect at x=0.50, not 1.0
-- **Implication**: The "inner vs outer" split effect is strongest at lower thresholds
+**Critical New Findings:**
 
-**Test 5 - Sign-Based Robustness:**
-- 143/151 galaxies (94.7%) show positive velocity jump
-- Bootstrap 95% CI for median: [0.505, 0.666] — excludes zero
-- Binomial test p-value: **2.1 × 10⁻³³**
+**Test 3 (Upgraded) - ΔAIC Rank of x=1.0:**
+- For each galaxy, compared ΔAIC at x=1.0 vs 50 random breakpoints
+- Mean percentile rank of x=1.0: **49%** (no better than random)
+- Only 23.8% of galaxies have x=1.0 in their top 20% of breakpoints
+- Wilcoxon p-value: 0.635 (not significant)
+- **Implication**: x=1.0 is NOT a uniquely special threshold location
 
-**Interpretation:**
+**Test 4 (Upgraded) - Best Breakpoint Distribution:**
+- Found optimal breakpoint per galaxy via ΔAIC maximization
+- Mean best breakpoint: **x = 1.17** (not 1.0)
+- Median: 1.175, Std Dev: 0.231
+- Only 40.6% of galaxies have optimal breakpoint within ±0.15 of 1.0
+- ΔAIC at x=1.0 achieves only **56.3%** of optimal ΔAIC
+- **Implication**: The theoretical threshold of 1.0 is close but not optimal
 
-The rigorous analysis yields **MODERATE EVIDENCE (3/5 tests passed)**:
+**Test 5 (NEW) - Piecewise vs Quadratic:**
+- Both models have 3 parameters (fair comparison)
+- **Quadratic wins in 61.2% of galaxies**
+- Mean ΔAIC (Quadratic - Piecewise): -2.87 (favoring quadratic)
+- Wilcoxon p-value: **3.4 × 10⁻⁴**
+- **Implication**: The relationship is better described by SMOOTH CURVATURE than a discrete KINK
 
-- ✅ **A real breakpoint/kink exists** — piecewise models outperform smooth models significantly
-- ✅ **Local discontinuity confirmed** — the jump persists even in narrow bands around threshold
-- ✅ **Highly robust effect** — 95% of galaxies show positive jumps, CI excludes zero
-- ⚠️ **Threshold 1.0 may not be uniquely special** — random thresholds and threshold sweep suggest the effect exists across a range of values
-- ⚠️ **Peak effect at lower threshold** — maximum separation occurs around x=0.5, not 1.0
+**Revised Interpretation (3.5/6 tests passed):**
 
-**Conclusion**: There IS a genuine discontinuity in the data (not merely "outer > inner"), but the precise location of the breakpoint may vary or may not be exactly at the theoretically predicted value of 1.0. This suggests the underlying phenomenon is real, but the mathematical formulation may require refinement.
+The upgraded analysis reveals a more nuanced picture:
+
+- ✅ **A real predictive relationship exists** — piecewise at x=1.0 beats linear, local jump is robust
+- ✅ **Effect is highly consistent** — 95% of galaxies show positive velocity increase
+- ⚠️ **Optimal threshold is ~1.17, not 1.0** — best breakpoints cluster slightly above the theoretical value
+- ❌ **x=1.0 is NOT uniquely special** — it ranks at the 49th percentile among random breakpoints
+- ❌ **Smooth curvature beats discrete kink** — quadratic (3 params) outperforms piecewise (3 params) in 61% of galaxies
+
+**Revised Conclusion:**
+
+The data strongly supports that there is a **real, predictive relationship** between the normalized baryonic input (V_bar + R) and observed velocity. However, this relationship appears to be **smoothly nonlinear (curved)** rather than a **discrete phase transition (kink)**. The "overflow" threshold of x=1.0 captures this relationship reasonably well but is not a special discontinuity point — a smooth function with similar complexity fits the data better.
+
+This suggests the "Gravitational Overflow Hypothesis" may be better understood as an **effective approximation** to an underlying smooth acceleration law (similar to MOND's interpolating function) rather than evidence of discrete digital physics.
 
 ---
 
@@ -283,7 +295,7 @@ This independent verification confirms the key claims of the Gravitational Overf
 
 ### 5.1 Primary Findings
 
-1. ✅ **Phase Transition Confirmed**: The digital sum threshold creates a highly significant (p < 10⁻²⁷⁰) separation in observed velocities
+1. ✅ **Predictive Relationship Confirmed**: The normalized baryonic input creates a highly significant (p < 10⁻²⁷⁰) separation in observed velocities
 
 2. ✅ **Superior Predictive Power**: The Overflow model reduces prediction error by 50.3% compared to Newtonian dynamics
 
@@ -291,22 +303,30 @@ This independent verification confirms the key claims of the Gravitational Overf
 
 4. ✅ **Digital Pattern Verified**: MSB of observed velocity correlates with carry-out signal at 70.2%
 
-5. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms phase transition with p < 10⁻²⁷, definitively addressing pseudo-replication concerns
+5. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms effect with p < 10⁻²⁷, definitively addressing pseudo-replication concerns
 
-6. ⚠️ **Breakpoint Reality Confirmed, Location Uncertain**: Rigorous testing (3/5 tests passed) confirms a genuine discontinuity exists (piecewise models win 75.8%, local jump 93.7% positive), but the optimal threshold location may not be exactly 1.0
+6. ⚠️ **Threshold x=1.0 Not Uniquely Special**: x=1.0 ranks at 49th percentile among random breakpoints; optimal breakpoints cluster at x≈1.17
 
-### 5.2 Implications
+7. ❌ **Smooth Curvature Outperforms Discrete Kink**: Quadratic fits (3 params) beat piecewise fits (3 params) in 61.2% of galaxies, suggesting the relationship is smoothly nonlinear rather than a discrete phase transition
 
-If further verified, the Gravitational Overflow Hypothesis would represent a paradigm shift in our understanding of galactic dynamics - suggesting that gravity at cosmic scales operates according to discrete logical rules rather than purely continuous physical laws. The "dark matter" phenomenon would then be reinterpreted not as invisible mass, but as the mathematical signature of information overflow in gravitational systems.
+### 5.2 Revised Implications
+
+The upgraded analysis reveals that while the Gravitational Overflow model has strong **predictive power**, the underlying relationship is better characterized as **smooth curvature** rather than a **discrete digital phase transition**. This suggests:
+
+- The "overflow" threshold is an **effective approximation** to an underlying smooth acceleration law
+- The model may be capturing the same physics as MOND's interpolating function in a different mathematical form
+- The "digital" interpretation requires reconsideration — the data supports nonlinearity but not discontinuity
+- The predictive success of the model remains valid even if the theoretical interpretation shifts
 
 ### 5.3 Future Directions
 
 1. Test on independent galaxy surveys (THINGS, LITTLE THINGS)
-2. Develop physical mechanisms for digital gravity
+2. **Compare with MOND**: Investigate mathematical relationship between overflow model and MOND interpolating functions
 3. Compare with detailed dark matter halo simulations
-4. Investigate other astrophysical systems for similar digital signatures
-5. **Refine threshold location**: Investigate why peak effect occurs at x≈0.5 rather than x=1.0
+4. **Develop smooth formulation**: Replace discrete threshold with continuous transition function
+5. **Refine threshold location**: Investigate why optimal breakpoints cluster at x≈1.17 rather than x=1.0
 6. **Per-galaxy threshold fitting**: Test whether optimal breakpoint varies systematically with galaxy properties
+7. **Physical interpretation**: Explore whether smooth curvature implies modified gravity vs digital physics
 
 ---
 
@@ -316,15 +336,18 @@ If further verified, the Gravitational Overflow Hypothesis would represent a par
 |--------|-------|
 | Galaxies Analyzed | 171 |
 | Total Data Points | 3,375 |
-| Phase Transition p-value (pooled) | 9.29 × 10⁻²⁷³ |
-| Phase Transition p-value (per-galaxy) | 1.77 × 10⁻²⁷ |
-| Galaxies Showing Phase Transition | 160/160 (100%) |
+| Velocity Separation p-value (pooled) | 9.29 × 10⁻²⁷³ |
+| Velocity Separation p-value (per-galaxy) | 1.77 × 10⁻²⁷ |
+| Galaxies Showing Positive Jump | 160/160 (100%) |
 | Mean RMSE Improvement | 50.3% |
 | Galaxies where Overflow wins | 98.2% |
 | MSB Carry-Out Correlation | 70.2% |
-| Piecewise Model Wins (AIC) | 75.8% |
+| Piecewise @ x=1.0 beats Linear | 75.8% |
 | Local Jump Positive (±0.15 band) | 93.7% |
-| Rigorous Tests Passed | 3/5 |
+| **x=1.0 Percentile Rank (ΔAIC)** | **49%** (not special) |
+| **Optimal Breakpoint Mean** | **x = 1.17** |
+| **Quadratic beats Piecewise** | **61.2%** |
+| Upgraded Tests Passed | 3.5/6 |
 
 ---
 
@@ -338,10 +361,12 @@ If further verified, the Gravitational Overflow Hypothesis would represent a par
 | `figure4_digital_horizon.png` | Bit-level accuracy analysis |
 | `galaxy_phase_hist.png` | Per-galaxy velocity jump distribution |
 | `phase_transition_rigorous.png` | Rigorous breakpoint analysis (5 tests) |
+| `phase_transition_upgraded.png` | Upgraded ΔAIC-based analysis (6 tests) |
 | `independent_analysis.py` | Python script for independent verification |
 | `comprehensive_visualization.py` | Visualization generation script |
 | `galaxy_phase_transition_test.py` | Galaxy-level independence test |
 | `phase_transition_rigorous_test.py` | Rigorous breakpoint vs inner/outer analysis |
+| `phase_transition_upgraded_test.py` | Upgraded ΔAIC controls + kink vs curvature |
 
 ---
 
@@ -358,6 +383,7 @@ python rmse_benchmark.py
 python fair_baseline_benchmark.py
 python galaxy_phase_transition_test.py  # Galaxy-level independence test
 python phase_transition_rigorous_test.py  # Rigorous breakpoint analysis
+python phase_transition_upgraded_test.py  # Upgraded ΔAIC + kink vs curvature
 ```
 
 ---
