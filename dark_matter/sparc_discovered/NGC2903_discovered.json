@@ -1,0 +1,42 @@
+{
+  "bit0": {
+    "gene": "((a5 OR b5) XNOR (b1 AND b2))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b0"
+  },
+  "bit1": {
+    "gene": "((a5 XOR (a1 OR a6)) OR (a6 AND b2))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b1"
+  },
+  "bit2": {
+    "gene": "((a3 AND a7) XNOR (a4 OR b3))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b2"
+  },
+  "bit3": {
+    "gene": "((a1 OR a5) XNOR (a2 AND a4))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b3"
+  },
+  "bit4": {
+    "gene": "((a4 XNOR b7) OR (b2 XOR b3))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b4"
+  },
+  "bit5": {
+    "gene": "(a7 XOR (a0 AND a6))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b5"
+  },
+  "bit6": {
+    "gene": "(a2 OR NOT(a4))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b6"
+  },
+  "bit7": {
+    "gene": "(a1 OR (a2 OR b4))",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_NGC2903_b7"
+  }
+}

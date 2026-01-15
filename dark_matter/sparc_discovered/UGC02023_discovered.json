@@ -1,0 +1,42 @@
+{
+  "bit0": {
+    "gene": "Out[i] = b0[i] OR Out[i]",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b0"
+  },
+  "bit1": {
+    "gene": "Out[i] = a7[i] OR Out[i]",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b1"
+  },
+  "bit2": {
+    "gene": "RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b2"
+  },
+  "bit3": {
+    "gene": "RippleAdderSumBit[3]: (a3 XOR b3) XOR carry_in(3)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b3"
+  },
+  "bit4": {
+    "gene": "RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b4"
+  },
+  "bit5": {
+    "gene": "RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b5"
+  },
+  "bit6": {
+    "gene": "(a0 XOR a1)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b6"
+  },
+  "bit7": {
+    "gene": "RippleAdderCout[8]: carry_out(8)",
+    "accuracy": 1.0,
+    "stored_as": "SPARC_UGC02023_b7"
+  }
+}

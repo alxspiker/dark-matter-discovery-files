@@ -1,0 +1,1969 @@
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/.venv/Scripts/python.exe C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/dark_matter/sparc_discovery.py --discover --batch --exact --limit 5
+[LIBRARY] Loaded 107 discovered ops
+[BATCH] Discovering on 5 SPARC galaxies
+[MODE] scaling=per-galaxy, exact=True, force=False
+
+[1/5] CamB
+
+============================================================
+🌌 DISCOVERY: CamB (9 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_CamB_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 0 1 1 0 0]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [16549, 29674, 36087]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | UnarySet[x16]: [16549, 29674, 36087]
+
+[FRACTAL RESEARCH] SPARC_CamB_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 0 0 0 1 0]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [16549, 42486, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | UnarySet[x16]: [16549, 42486, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 1 0 0 0]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [29674, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | UnarySet[x16]: [29674, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 0 1 1 0 0]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [10099, 29674, 36087, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | UnarySet[x16]: [10099, 29674, 36087, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 1 1 1 1]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [29674, 36087, 42486, 52478, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | UnarySet[x16]: [29674, 36087, 42486, 52478, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 1 0 1 0]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [10099, 22991, 29674, 42486, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | UnarySet[x16]: [10099, 22991, 29674, 42486, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 1 0 0 1]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [16549, 22991, 29674, 52478, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | UnarySet[x16]: [16549, 22991, 29674, 52478, 65252]
+
+[FRACTAL RESEARCH] SPARC_CamB_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 0 1 1 1]
+      x0: [0 1 1 1 0 1 0 0]
+      x1: [0 1 0 1 1 1 1 1]
+      x2: [0 0 1 1 0 1 1 1]
+      x3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [36087, 42486, 52478, 65252]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_CamB_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.000 | UnarySet[x16]: [36087, 42486, 52478, 65252]
+
+[SAVED] CamB → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\CamB_discovered.json
+
+[2/5] D512-2
+
+============================================================
+🌌 DISCOVERY: D512-2 (4 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D512_2_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 65261]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D512_2_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | UnarySet[x16]: [22014, 65261]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [43766, 65261]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D512_2_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | UnarySet[x16]: [43766, 65261]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 43766, 65261]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D512_2_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | UnarySet[x16]: [22014, 43766, 65261]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 43766]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D512_2_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | UnarySet[x16]: [22014, 43766]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 43766]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b4' -> 'SPARC_D512_2_b3' (equivalent pattern)
+  Bit 4: ✓ acc=1.000 | UnarySet[x16]: [22014, 43766]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 43766, 65261]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b5' -> 'SPARC_D512_2_b2' (equivalent pattern)
+  Bit 5: ✓ acc=1.000 | UnarySet[x16]: [22014, 43766, 65261]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [43766, 65261]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b6' -> 'SPARC_D512_2_b1' (equivalent pattern)
+  Bit 6: ✓ acc=1.000 | UnarySet[x16]: [43766, 65261]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 1]
+      x0: [0 0 0 1]
+      x1: [0 1 1 0]
+      x2: [0 1 1 1]
+      x3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [22014, 43766, 65261]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b7' -> 'SPARC_D512_2_b2' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | UnarySet[x16]: [22014, 43766, 65261]
+
+[SAVED] D512-2 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D512-2_discovered.json
+
+[3/5] D564-8
+
+============================================================
+🌌 DISCOVERY: D564-8 (6 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D564_8_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 0 1 0]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [12992, 52457]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | UnarySet[x16]: [12992, 52457]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [26108, 39166, 52457, 65231]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | UnarySet[x16]: [26108, 39166, 52457, 65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 1 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [12992, 26108, 39166, 52457, 65231]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | UnarySet[x16]: [12992, 26108, 39166, 52457, 65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [26108, 39166, 52457, 65231]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b3' -> 'SPARC_D564_8_b1' (equivalent pattern)
+  Bit 3: ✓ acc=1.000 | UnarySet[x16]: [26108, 39166, 52457, 65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 0 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [65231]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | UnarySet[x16]: [65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [12992, 26108, 52457, 65231]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | UnarySet[x16]: [12992, 26108, 52457, 65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [12992, 39166, 52457, 65231]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D564_8_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | UnarySet[x16]: [12992, 39166, 52457, 65231]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 1 1]
+      x0: [0 0 0 0 1 1]
+      x1: [0 0 0 1 0 1]
+      x2: [0 0 1 1 0 1]
+      x3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [26108, 39166, 52457, 65231]
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b7' -> 'SPARC_D564_8_b1' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | UnarySet[x16]: [26108, 39166, 52457, 65231]
+
+[SAVED] D564-8 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D564-8_discovered.json
+
+[4/5] D631-7
+
+============================================================
+🌌 DISCOVERY: D631-7 (16 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D631_7_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0 1 0 1 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4476, 8929, 17658, 26088, 30427, 34767, 47779]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | UnarySet[x16]: [4476, 8929, 17658, 26088, 30427, 34767, 47779]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 0 1 0 0]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4476, 13310, 21750, 52118, 56457, 60796]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | UnarySet[x16]: [4476, 13310, 21750, 52118, 56457, 60796]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 0 1 0 1 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4476, 17658, 26088, 30427, 34767, 39104, 43442, 47779, 52118, 56457]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | UnarySet[x16]: [4476, 17658, 26088, 30427, 34767, 39104, 43442, 47779, 52118, 56457]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0 0 1 1 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4476, 8929, 21750, 26088, 30427, 34767, 39104, 43442, 52118, 56457, 60796, 65136]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | UnarySet[x16]: [4476, 8929, 21750, 26088, 30427, 34767, 39104, 43442, 52118, 56457, 60796, 65136]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 0 1 0 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [8929, 13310, 21750, 30427, 39104, 47779, 52118, 56457, 60796, 65136]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | UnarySet[x16]: [8929, 13310, 21750, 30427, 39104, 47779, 52118, 56457, 60796, 65136]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 0 0 1 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4476, 13310, 26088, 30427, 43442, 47779, 52118, 56457, 60796, 65136]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | UnarySet[x16]: [4476, 13310, 26088, 30427, 43442, 47779, 52118, 56457, 60796, 65136]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 0 0 0 0]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [8929, 13310, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | UnarySet[x16]: [8929, 13310, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 1 1 1 1]
+      x0: [0 0 1 0 0 0 0 1]
+      x1: [0 0 0 1 1 1 0 1]
+      x2: [0 1 0 1 0 1 0 0]
+      x3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [17658, 21750, 26088, 30427, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_D631_7_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.000 | UnarySet[x16]: [17658, 21750, 26088, 30427, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+
+[SAVED] D631-7 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D631-7_discovered.json
+
+[5/5] DDO064
+
+============================================================
+🌌 DISCOVERY: DDO064 (14 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_DDO064_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 0 1 0 0 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4396, 17792, 40433, 45048, 49401, 51451]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | UnarySet[x16]: [4396, 17792, 40433, 45048, 49401, 51451]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0 0 1 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4396, 8777, 22419, 27052, 31435, 35809, 40433, 45048, 49401, 51451, 65278]    
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | UnarySet[x16]: [4396, 8777, 22419, 27052, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 1 1 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4396, 13429, 17792, 22419, 27052, 31435, 35809, 65278]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | UnarySet[x16]: [4396, 13429, 17792, 22419, 27052, 31435, 35809, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 1 0 1 0 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4396, 8777, 13429, 22419, 35809, 40433, 45048, 49401, 51451, 65278]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | UnarySet[x16]: [4396, 8777, 13429, 22419, 35809, 40433, 45048, 49401, 51451, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 0 0 1 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [8777, 22419, 27052, 31435, 40433, 45048, 49401, 51451, 65278]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | UnarySet[x16]: [8777, 22419, 27052, 31435, 40433, 45048, 49401, 51451, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 1 0 1 1 1 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [4396, 8777, 17792, 22419, 27052, 35809, 40433, 45048, 49401, 51451, 65278]    
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | UnarySet[x16]: [4396, 8777, 17792, 22419, 27052, 35809, 40433, 45048, 49401, 51451, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 1 1 1 0 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [13429, 17792, 22419, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | UnarySet[x16]: [13429, 17792, 22419, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 0 0 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 0 0 0 0 1 0 1]
+      x2: [0 1 0 1 0 0 1 0]
+      x3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [27052, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO064_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.000 | UnarySet[x16]: [27052, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+
+[SAVED] DDO064 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO064_discovered.json
+
+============================================================
+
+============================================================
+📊 CROSS-GALAXY PATTERN ANALYSIS
+============================================================
+
+Analyzed 5 galaxies
+
+BIT | AVG_ACC | GALAXIES | UNIQUE_FORMULAS | TOP_FORMULA
+--------------------------------------------------------------------------------
+ 7  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [36087, 42486, 52478, 652...
+ 6  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [16549, 22991, 29674, 524...
+ 5  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [10099, 22991, 29674, 424...
+ 4  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [29674, 36087, 42486, 524...
+ 3  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [10099, 29674, 36087, 652...
+ 2  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [29674, 65252]
+ 1  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [16549, 42486, 65252]
+ 0  |  1.000 |        5 |               5 |  20.0%: UnarySet[x16]: [16549, 29674, 36087]
+
+============================================================
+🔬 DETAILED BIT 7 (MSB) FORMULAS
+============================================================
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [36087, 42486, 52478, 65252]
+       Examples: CamB
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [22014, 43766, 65261]
+       Examples: D512-2
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [26108, 39166, 52457, 65231]
+       Examples: D564-8
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [17658, 21750, 26088, 30427, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+       Examples: D631-7
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [27052, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+       Examples: DDO064
+
+============================================================
+🔬 DETAILED BIT 6 FORMULAS
+============================================================
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [16549, 22991, 29674, 52478, 65252]
+       Examples: CamB
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [43766, 65261]
+       Examples: D512-2
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [12992, 39166, 52457, 65231]
+       Examples: D564-8
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [8929, 13310, 34767, 39104, 43442, 47779, 52118, 56457, 60796, 65136]
+       Examples: D631-7
+
+ 20.0% (  1 galaxies): UnarySet[x16]: [13429, 17792, 22419, 31435, 35809, 40433, 45048, 49401, 51451, 65278]
+       Examples: DDO064
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/.venv/Scripts/python.exe C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/dark_matter/sparc_discovery.py --discover --batch --limit 5 --force
+[LIBRARY] Loaded 147 discovered ops
+[BATCH] Discovering on 5 SPARC galaxies
+[MODE] scaling=per-galaxy, exact=False, force=True
+
+[1/5] CamB
+
+============================================================
+🌌 DISCOVERY: CamB (9 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_CamB_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 0 1 1 0 0]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 66.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] r_b3 XOR r_b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: r_b3 XOR r_b6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | (r_b3 XOR r_b6) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 0 0 0 1 0]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 77.8%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 88.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] r_b0 XOR (vbar_b4 XOR vbar_b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: r_b0 XOR (vbar_b4 XOR vbar_b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (r_b0 XOR (vbar_b4 XOR vbar_b7)) [MSB, latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 1 0 0 0]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] NOT(vbar_b0) AND r_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: NOT(vbar_b0) AND r_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | (NOT(vbar_b0) AND r_b1)
+
+[FRACTAL RESEARCH] SPARC_CamB_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 0 1 1 0 0]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 88.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] r_b1 OR (vbar_b0 AND r_b2) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b3 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: r_b1 OR (vbar_b0 AND r_b2)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | (r_b1 OR (vbar_b0 AND r_b2)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 1 1 1 1]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] r_b1 XOR vbar_b4 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: r_b1 XOR vbar_b4
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | (r_b1 XOR vbar_b4) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1 1 0 1 0]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] r_b0 OR r_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: r_b0 OR r_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (r_b0 OR r_b1) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 1 0 0 1]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = r_b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = r_b6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | Out[i] = r_b6[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 0 1 1 1]
+      vbar_b0: [0 1 1 1 0 1 0 0]
+      r_b0: [0 1 0 1 1 0 1 0]
+      vbar_b1: [0 1 0 1 1 1 1 1]
+      r_b1: [0 1 0 0 1 0 0 0]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = r_b7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = r_b7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 7: ✓ acc=1.000 | Out[i] = r_b7[i] OR Out[i] [latch?]
+
+[SAVED] CamB → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\CamB_discovered.json
+
+[2/5] D512-2
+
+============================================================
+🌌 DISCOVERY: D512-2 (4 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D512_2_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = r_b2 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = r_b2
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | Out[i] = r_b2[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = r_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = r_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | Out[i] = r_b1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b2 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b2
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | Out[i] = vbar_b2[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | Out[i] = vbar_b1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b1
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b4' -> 'SPARC_D512_2_b3' (equivalent pattern)
+  Bit 4: ✓ acc=1.000 | Out[i] = vbar_b1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b2 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b2
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b5' -> 'SPARC_D512_2_b2' (equivalent pattern)
+  Bit 5: ✓ acc=1.000 | Out[i] = vbar_b2[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = r_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = r_b1
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b6' -> 'SPARC_D512_2_b1' (equivalent pattern)
+  Bit 6: ✓ acc=1.000 | Out[i] = r_b1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 1]
+      vbar_b0: [0 0 0 1]
+      r_b0: [0 1 0 0]
+      vbar_b1: [0 1 1 0]
+      r_b1: [0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b2 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b2
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b7' -> 'SPARC_D512_2_b2' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | Out[i] = vbar_b2[i] OR Out[i] [latch?]
+
+[SAVED] D512-2 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D512-2_discovered.json
+
+[3/5] D564-8
+
+============================================================
+🌌 DISCOVERY: D564-8 (6 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D564_8_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 0 1 0]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] vbar_b0 XOR r_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: vbar_b0 XOR r_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | (vbar_b0 XOR r_b1) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | Out[i] = vbar_b3[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 1 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | Out[i] = vbar_b6[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b3
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b3' -> 'SPARC_D564_8_b1' (equivalent pattern)
+  Bit 3: ✓ acc=1.000 | Out[i] = vbar_b3[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 0 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] vbar_b0 AND vbar_b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: vbar_b0 AND vbar_b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | (vbar_b0 AND vbar_b1)
+
+[FRACTAL RESEARCH] SPARC_D564_8_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] vbar_b0 OR r_b5 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: vbar_b0 OR r_b5
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (vbar_b0 OR r_b5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] vbar_b0 OR r_b4 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: vbar_b0 OR r_b4
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | (vbar_b0 OR r_b4) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 1 1]
+      vbar_b0: [0 0 0 0 1 1]
+      r_b0: [0 0 1 0 0 0]
+      vbar_b1: [0 0 0 1 0 1]
+      r_b1: [0 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = vbar_b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = vbar_b3
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b7' -> 'SPARC_D564_8_b1' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | Out[i] = vbar_b3[i] OR Out[i] [latch?]
+
+[SAVED] D564-8 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D564-8_discovered.json
+
+[4/5] D631-7
+
+============================================================
+🌌 DISCOVERY: D631-7 (16 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_D631_7_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0 1 0 1 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 87.5%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 87.5%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 93.8%
+      Best carry-out: 93.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [MATCH] RippleSum pattern -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b0 discovered via Fractal! [0.0s total, 8.6s]
+      Pattern: RippleSum: (r_b1 XOR vbar_b2) XOR CarryOut(r_b0,r_b2,r_b6,vbar_b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | ((r_b1 XOR vbar_b2) XOR ((r_b0 AND r_b2) OR ((r_b0 OR r_b2) AND (r_b6 AND vbar_b5)))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1 0 1 0 0]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.8%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+      [MATCH] vbar_b2 XOR (vbar_b0 AND r_b2 AND r_b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b1 discovered via Fractal! [0.0s total, 0.4s]
+      Pattern: 4-Var: vbar_b2 XOR (vbar_b0 AND r_b2 AND r_b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (vbar_b2 XOR (vbar_b0 AND (r_b2 AND r_b7))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 0 1 0 1 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 93.8%
+      Best carry-out: 93.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [MATCH] RippleSum pattern -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b2 discovered via Fractal! [0.0s total, 9.3s]
+      Pattern: RippleSum: (r_b2 XOR vbar_b1) XOR CarryOut(r_b7,vbar_b6,vbar_b3,vbar_b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | ((r_b2 XOR vbar_b1) XOR ((r_b7 AND vbar_b6) OR ((r_b7 OR vbar_b6) AND (vbar_b3 AND vbar_b4)))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0 0 1 1 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 68.8%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (r_b3 XOR vbar_b0) OR (r_b4 XOR r_b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b3 discovered via Fractal! [0.0s total, 4.4s]
+      Pattern: 4-Var: (r_b3 XOR vbar_b0) OR (r_b4 XOR r_b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | ((r_b3 XOR vbar_b0) OR (r_b4 XOR r_b5)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 0 1 0 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (r_b0 XOR vbar_b2) XOR (r_b3 OR r_b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b4 discovered via Fractal! [0.0s total, 1.0s]
+      Pattern: 4-Var: (r_b0 XOR vbar_b2) XOR (r_b3 OR r_b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | ((r_b0 XOR vbar_b2) XOR (r_b3 OR r_b5)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1 0 0 1 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 87.5%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (vbar_b1 XOR r_b2) OR (vbar_b3 AND r_b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b5 discovered via Fractal! [0.0s total, 1.8s]
+      Pattern: 4-Var: (vbar_b1 XOR r_b2) OR (vbar_b3 AND r_b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | ((vbar_b1 XOR r_b2) OR (vbar_b3 AND r_b4)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 1 0 0 0 0]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.8%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] r_b3 OR (r_b6 XOR vbar_b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b6 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: r_b3 OR (r_b6 XOR vbar_b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | (r_b3 OR (r_b6 XOR vbar_b7)) [MSB, latch?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 1 1 1 1]
+      vbar_b0: [0 0 1 0 0 0 0 1]
+      r_b0: [0 1 0 1 0 0 1 0]
+      vbar_b1: [0 0 0 1 1 1 0 1]
+      r_b1: [0 0 1 1 0 0 0 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] r_b2 OR r_b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: r_b2 OR r_b3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 7: ✓ acc=1.000 | (r_b2 OR r_b3) [latch?]
+
+[SAVED] D631-7 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D631-7_discovered.json
+
+[5/5] DDO064
+
+============================================================
+🌌 DISCOVERY: DDO064 (14 points)
+============================================================
+
+[FRACTAL RESEARCH] SPARC_DDO064_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 0 1 0 0 0]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 85.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 92.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 92.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (vbar_b0 OR r_b6) XOR (vbar_b2 OR r_b1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b0 discovered via Fractal! [0.0s total, 0.8s]
+      Pattern: 4-Var: (vbar_b0 OR r_b6) XOR (vbar_b2 OR r_b1)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | ((vbar_b0 OR r_b6) XOR (vbar_b2 OR r_b1)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0 0 1 1 1]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] vbar_b1 OR (vbar_b2 XOR vbar_b6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: vbar_b1 OR (vbar_b2 XOR vbar_b6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (vbar_b1 OR (vbar_b2 XOR vbar_b6)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 0 1 1 1 1 1]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 85.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 92.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 92.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (vbar_b0 OR r_b4) XOR (vbar_b7 XOR r_b1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b2 discovered via Fractal! [0.0s total, 0.7s]
+      Pattern: 4-Var: (vbar_b0 OR r_b4) XOR (vbar_b7 XOR r_b1)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | ((vbar_b0 OR r_b4) XOR (vbar_b7 XOR r_b1)) [MSB, latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 1 0 1 0 0]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] vbar_b4 OR (vbar_b0 XOR r_b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b3 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: vbar_b4 OR (vbar_b0 XOR r_b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | (vbar_b4 OR (vbar_b0 XOR r_b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 1 0 0 1 1 1]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] r_b1 XOR (r_b5 XOR vbar_b6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b4 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: r_b1 XOR (r_b5 XOR vbar_b6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | (r_b1 XOR (r_b5 XOR vbar_b6)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 1 1 0 1 1 1 0]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] r_b0 OR (vbar_b0 XOR r_b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: r_b0 OR (vbar_b0 XOR r_b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (r_b0 OR (vbar_b0 XOR r_b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 1 1 1 0 1]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 85.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] vbar_b1 OR (r_b2 OR r_b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b6 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: vbar_b1 OR (r_b2 OR r_b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | (vbar_b1 OR (r_b2 OR r_b7)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['vbar_b0', 'r_b0', 'vbar_b1', 'r_b1', 'vbar_b2', 'r_b2', 'vbar_b3', 'r_b3', 'vbar_b4', 'r_b4', 'vbar_b5', 'r_b5', 'vbar_b6', 'r_b6', 'vbar_b7', 'r_b7']
+      Target sample: [0 0 0 0 0 0 1 1]
+      vbar_b0: [0 0 1 1 0 1 0 1]
+      r_b0: [0 1 0 0 1 1 1 0]
+      vbar_b1: [0 0 0 0 0 1 0 1]
+      r_b1: [0 0 1 0 0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 92.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] r_b3 OR r_b7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: r_b3 OR r_b7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 7: ✓ acc=1.000 | (r_b3 OR r_b7) [latch?]
+
+[SAVED] DDO064 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO064_discovered.json
+
+============================================================
+
+============================================================
+📊 CROSS-GALAXY PATTERN ANALYSIS
+============================================================
+
+Analyzed 5 galaxies
+
+BIT | AVG_ACC | GALAXIES | UNIQUE_FORMULAS | TOP_FORMULA
+--------------------------------------------------------------------------------
+ 7  |  1.000 |        5 |               5 |  20.0%: Out[i] = r_b7[i] OR Out[i]
+ 6  |  1.000 |        5 |               5 |  20.0%: Out[i] = r_b6[i] OR Out[i]
+ 5  |  1.000 |        5 |               5 |  20.0%: (r_b0 OR r_b1)
+ 4  |  1.000 |        5 |               5 |  20.0%: (r_b1 XOR vbar_b4)
+ 3  |  1.000 |        5 |               5 |  20.0%: (r_b1 OR (vbar_b0 AND r_b2))
+ 2  |  1.000 |        5 |               5 |  20.0%: (NOT(vbar_b0) AND r_b1)
+ 1  |  1.000 |        5 |               5 |  20.0%: (r_b0 XOR (vbar_b4 XOR vbar_b7))
+ 0  |  1.000 |        5 |               5 |  20.0%: (r_b3 XOR r_b6)
+
+============================================================
+🔬 DETAILED BIT 7 (MSB) FORMULAS
+============================================================
+
+ 20.0% (  1 galaxies): Out[i] = r_b7[i] OR Out[i]
+       Examples: CamB
+
+ 20.0% (  1 galaxies): Out[i] = vbar_b2[i] OR Out[i]
+       Examples: D512-2
+
+ 20.0% (  1 galaxies): Out[i] = vbar_b3[i] OR Out[i]
+       Examples: D564-8
+
+ 20.0% (  1 galaxies): (r_b2 OR r_b3)
+       Examples: D631-7
+
+ 20.0% (  1 galaxies): (r_b3 OR r_b7)
+       Examples: DDO064
+
+============================================================
+🔬 DETAILED BIT 6 FORMULAS
+============================================================
+
+ 20.0% (  1 galaxies): Out[i] = r_b6[i] OR Out[i]
+       Examples: CamB
+
+ 20.0% (  1 galaxies): Out[i] = r_b1[i] OR Out[i]
+       Examples: D512-2
+
+ 20.0% (  1 galaxies): (vbar_b0 OR r_b4)
+       Examples: D564-8
+
+ 20.0% (  1 galaxies): (r_b3 OR (r_b6 XOR vbar_b7))
+       Examples: D631-7
+
+ 20.0% (  1 galaxies): (vbar_b1 OR (r_b2 OR r_b7))
+       Examples: DDO064
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> 

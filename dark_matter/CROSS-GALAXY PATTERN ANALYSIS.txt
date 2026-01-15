@@ -1,0 +1,2945 @@
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> $env:PYTHONIOENCODING="utf-8"; .\.venv\Scripts\python.exe dark_matter\sparc_discovery.py --discover --batch --force --limit 10
+[LIBRARY] Loaded 215 discovered ops
+[BATCH] Discovering on 10 SPARC galaxies
+[MODE] scaling=per-galaxy, exact=False, force=True
+
+[1/10] CamB
+
+============================================================
+🌌 DISCOVERY: CamB (9 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_CamB_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 1 1 0 0]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] b3 XOR b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: b3 XOR b6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | (b3 XOR b6) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 0 1 0]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 77.8%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 88.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a1 XOR (a0 OR b6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a1 XOR (a0 OR b6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (a1 XOR (a0 OR b6)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 1 0 0 0]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] NOT(a0) AND b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: NOT(a0) AND b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | (NOT(a0) AND b1)
+
+[FRACTAL RESEARCH] SPARC_CamB_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 1 1 0 0]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 88.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a5 AND (a0 XNOR a4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b3 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a5 AND (a0 XNOR a4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | (a5 AND (a0 XNOR a4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 1 1 1 1]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a4 XOR b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a4 XOR b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | (a4 XOR b1) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 0 1 0]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 88.9%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] b0 OR b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: b0 OR b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (b0 OR b1) [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 0 0 1]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = b6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | Out[i] = b6[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_CamB_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 9 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 1 1 1]
+      a0: [0 1 1 1 0 1 0 0]
+      a1: [0 1 0 1 1 1 1 1]
+      a2: [0 0 1 1 0 1 1 1]
+      a3: [0 0 0 1 1 0 0 1]
+      Data type: SEQUENTIAL (Few examples (9) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = b7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_CamB_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = b7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 7: ✓ acc=1.000 | Out[i] = b7[i] OR Out[i] [latch?]
+
+[SAVED] CamB → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\CamB_discovered.json        
+
+[2/10] D512-2
+
+============================================================
+🌌 DISCOVERY: D512-2 (4 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_D512_2_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=0) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S0 = (a0 XOR b0) XOR carry_in(0)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b0' -> 'Add2_S0' (equivalent pattern)
+  Bit 0: ✓ acc=1.000 | RippleAdderSumBit[0]: (a0 XOR b0) XOR carry_in(0) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=5) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S5 = (a5 XOR b5) XOR carry_in(5)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b1' -> 'Add8_S5' (equivalent pattern)
+  Bit 1: ✓ acc=1.000 | RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b2' -> 'Add8_Cout' (equivalent pattern)
+  Bit 2: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[FRACTAL RESEARCH] SPARC_D512_2_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | Out[i] = a1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a1
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b4' -> 'SPARC_D512_2_b3' (equivalent pattern)
+  Bit 4: ✓ acc=1.000 | Out[i] = a1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b5' -> 'Add8_Cout' (equivalent pattern)
+  Bit 5: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[FRACTAL RESEARCH] SPARC_D512_2_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=5) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S5 = (a5 XOR b5) XOR carry_in(5)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b6' -> 'Add8_S5' (equivalent pattern)
+  Bit 6: ✓ acc=1.000 | RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D512_2_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 4 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1]
+      a0: [0 0 0 1]
+      a1: [0 1 1 0]
+      a2: [0 1 1 1]
+      a3: [0 1 0 1]
+      Data type: SEQUENTIAL (Few examples (4) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D512_2_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D512_2_b7' -> 'Add8_Cout' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[SAVED] D512-2 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D512-2_discovered.json    
+
+[3/10] D564-8
+
+============================================================
+🌌 DISCOVERY: D564-8 (6 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_D564_8_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 1 0]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a0 XOR b1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a0 XOR b1
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | (a0 XOR b1) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b1' -> 'Add8_Cout' (equivalent pattern)
+  Bit 1: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[FRACTAL RESEARCH] SPARC_D564_8_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a6
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | Out[i] = a6[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b3' -> 'Add8_Cout' (equivalent pattern)
+  Bit 3: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[FRACTAL RESEARCH] SPARC_D564_8_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=3) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S3 = (a3 XOR b3) XOR carry_in(3)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b4' -> 'Add4_S3' (equivalent pattern)
+  Bit 4: ✓ acc=1.000 | RippleAdderSumBit[3]: (a3 XOR b3) XOR carry_in(3) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a0 OR b5 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a0 OR b5
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (a0 OR b5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=7) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S7 = (a7 XOR b7) XOR carry_in(7)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b6' -> 'Add8_S7' (equivalent pattern)
+  Bit 6: ✓ acc=1.000 | RippleAdderSumBit[7]: (a7 XOR b7) XOR carry_in(7) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D564_8_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 6 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 1]
+      a0: [0 0 0 0 1 1]
+      a1: [0 0 0 1 0 1]
+      a2: [0 0 1 1 0 1]
+      a3: [0 0 1 1 1 1]
+      Data type: SEQUENTIAL (Few examples (6) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D564_8_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_D564_8_b7' -> 'Add8_Cout' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[SAVED] D564-8 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D564-8_discovered.json    
+
+[4/10] D631-7
+
+============================================================
+🌌 DISCOVERY: D631-7 (16 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_D631_7_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 0 1 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 87.5%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 87.5%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 93.8%
+      Best carry-out: 93.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 93.8%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 93.8%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 93.8%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 93.8%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 93.8%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 93.8%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a0 OR a3) XOR (a2 AND b5)...
+      Errors: 1/16 at indices [13]...
+      Residual pattern: a0 AND (a3 AND b3) (matches 100.0%)
+      Current OR Residual = 93.8%
+      Current XOR Residual = 100.0%
+      [IMPROVED!] (4-Var: (a0 OR a3) XOR (a2 AND b5)) XOR (a0 AND (a3 AND b3))
+      *** FOUND COMPLETE TRUTH at level 1! ***
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b0 discovered via Fractal! [0.0s total, 12.1s]
+      Pattern: (4-Var: (a0 OR a3) XOR (a2 AND b5)) XOR (a0 AND (a3 AND b3))
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | (((a0 OR a3) XOR (a2 AND b5)) XOR (a0 AND (a3 AND b3))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 1 0 0]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.8%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+      [MATCH] a2 XOR (a0 AND a3 AND b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b1 discovered via Fractal! [0.0s total, 0.4s]
+      Pattern: 4-Var: a2 XOR (a0 AND a3 AND b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (a2 XOR (a0 AND (a3 AND b7))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 1 0 1 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 93.8%
+      Best carry-out: 93.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 93.8%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 93.8%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 93.8%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 93.8%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 93.8%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 93.8%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 3-Var: a7 XOR (a2 AND b4)...
+      Errors: 1/16 at indices [2]...
+      Residual pattern: a0 AND (a1 XOR b1) (matches 100.0%)
+      Current OR Residual = 93.8%
+      Current XOR Residual = 100.0%
+      [IMPROVED!] (3-Var: a7 XOR (a2 AND b4)) XOR (a0 AND (a1 XOR b1))
+      *** FOUND COMPLETE TRUTH at level 1! ***
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b2 discovered via Fractal! [0.0s total, 12.2s]
+      Pattern: (3-Var: a7 XOR (a2 AND b4)) XOR (a0 AND (a1 XOR b1))
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | ((a7 XOR (a2 AND b4)) XOR (a0 AND (a1 XOR b1))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 0 1 1 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 81.2%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a0 XOR b3) OR (b4 XOR b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b3 discovered via Fractal! [0.0s total, 1.1s]
+      Pattern: 4-Var: (a0 XOR b3) OR (b4 XOR b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | ((a0 XOR b3) OR (b4 XOR b5)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 1 0 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 81.2%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a2 XOR b0) XOR (b3 OR b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b4 discovered via Fractal! [0.0s total, 2.6s]
+      Pattern: 4-Var: (a2 XOR b0) XOR (b3 OR b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | ((a2 XOR b0) XOR (b3 OR b5)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 0 1 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 87.5%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a1 XOR b2) OR (a3 AND b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b5 discovered via Fractal! [0.0s total, 1.9s]
+      Pattern: 4-Var: (a1 XOR b2) OR (a3 AND b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | ((a1 XOR b2) OR (a3 AND b4)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 0 0 0]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.8%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a7 XOR (a6 AND b6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b6 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a7 XOR (a6 AND b6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | (a7 XOR (a6 AND b6)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_D631_7_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 16 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 1 1 1 1]
+      a0: [0 0 1 0 0 0 0 1]
+      a1: [0 0 0 1 1 1 0 1]
+      a2: [0 1 0 1 0 1 0 0]
+      a3: [0 1 0 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (16) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 93.8%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] b2 OR b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_D631_7_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: b2 OR b3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 7: ✓ acc=1.000 | (b2 OR b3) [latch?]
+
+[SAVED] D631-7 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\D631-7_discovered.json    
+
+[5/10] DDO064
+
+============================================================
+🌌 DISCOVERY: DDO064 (14 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_DDO064_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 1 0 0 0]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 85.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 92.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 92.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a0 OR b6) XOR (a2 OR b1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b0 discovered via Fractal! [0.0s total, 1.2s]
+      Pattern: 4-Var: (a0 OR b6) XOR (a2 OR b1)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=1.000 | ((a0 OR b6) XOR (a2 OR b1)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 0 1 1 1]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a1 OR (a2 XOR a6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a1 OR (a2 XOR a6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=1.000 | (a1 OR (a2 XOR a6)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1 1 1]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 85.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 92.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 92.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a0 OR b4) XOR (a7 XOR b1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b2 discovered via Fractal! [0.0s total, 1.1s]
+      Pattern: 4-Var: (a0 OR b4) XOR (a7 XOR b1)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=1.000 | ((a0 OR b4) XOR (a7 XOR b1)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1 0 1 0 0]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 85.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a4 OR (a0 XOR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b3 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a4 OR (a0 XOR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=1.000 | (a4 OR (a0 XOR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 1 1 1]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a3 XOR (b0 AND b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b4 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a3 XOR (b0 AND b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 4: ✓ acc=1.000 | (a3 XOR (b0 AND b4)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 1 1 0]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b0 OR (a0 XOR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b5 discovered via Fractal! [0.0s total, 0.2s]
+      Pattern: 3-Var: b0 OR (a0 XOR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 5: ✓ acc=1.000 | (b0 OR (a0 XOR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 1 1 1 0 1]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 85.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.9%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a1 OR (b2 OR b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a1 OR (b2 OR b7)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.000 | (a1 OR (b2 OR b7)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO064_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 14 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 0 1 1]
+      a0: [0 0 1 1 0 1 0 1]
+      a1: [0 0 0 0 0 1 0 1]
+      a2: [0 1 0 1 0 0 1 0]
+      a3: [0 1 1 0 0 0 1 1]
+      Data type: SEQUENTIAL (Few examples (14) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO064_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_DDO064_b7' -> 'Add8_Cout' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[SAVED] DDO064 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO064_discovered.json    
+
+[6/10] DDO154
+
+============================================================
+🌌 DISCOVERY: DDO154 (12 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_DDO154_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1 0 1 0 0]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 83.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a6 XOR (a0 OR a1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b0 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a6 XOR (a0 OR a1)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b0'
+  Bit 0: ✓ acc=1.000 | (a6 XOR (a0 OR a1)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 0 0 0]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 91.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b1 XOR (a0 OR a2) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b1 discovered via Fractal! [0.0s total, 0.2s]
+      Pattern: 3-Var: b1 XOR (a0 OR a2)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b1'
+  Bit 1: ✓ acc=1.000 | (b1 XOR (a0 OR a2)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 0 1 0]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 91.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a1 XOR (a5 AND b1) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a1 XOR (a5 AND b1)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b2'
+  Bit 2: ✓ acc=1.000 | (a1 XOR (a5 AND b1)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 0 0 0 0]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 91.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a0 XOR (a3 AND b3) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a0 XOR (a3 AND b3)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b3'
+  Bit 3: ✓ acc=1.000 | (a0 XOR (a3 AND b3)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1 0 1]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 91.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a0 XOR (b6 XOR b7) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a0 XOR (b6 XOR b7)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b4'
+  Bit 4: ✓ acc=1.000 | (a0 XOR (b6 XOR b7)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 0 1 1]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 83.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 91.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a0 OR (a5 XOR b2) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a0 OR (a5 XOR b2)
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b5'
+  Bit 5: ✓ acc=1.000 | (a0 OR (a5 XOR b2)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 1 1 1]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 91.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a3 OR b5 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a3 OR b5
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b6'
+  Bit 6: ✓ acc=1.000 | (a3 OR b5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO154_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 12 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 1 1 1 1 1]
+      a0: [0 1 0 0 0 0 1 0]
+      a1: [0 0 1 1 1 0 0 1]
+      a2: [0 1 0 1 0 1 1 1]
+      a3: [0 0 1 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (12) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 91.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a5 OR b6 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO154_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a5 OR b6
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'SPARC_DDO154_b7'
+  Bit 7: ✓ acc=1.000 | (a5 OR b6) [latch?]
+
+[SAVED] DDO154 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO154_discovered.json    
+
+[7/10] DDO161
+
+============================================================
+🌌 DISCOVERY: DDO161 (31 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_DDO161_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 1 0 1 1 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 80.6%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 83.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 83.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 93.5%
+      Best carry-out: 93.5%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 93.5%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 93.5%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 93.5%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 93.5%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 93.5%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 93.5%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a1 AND a3) XOR (a5 XOR b2)...
+      Errors: 2/31 at indices [ 5 11]...
+      Residual pattern: (a4 AND a6) AND (b1 AND b3) (matches 96.8%)
+      Current OR Residual = 93.5%
+      Current XOR Residual = 96.8%
+      [IMPROVED!] (4-Var: (a1 AND a3) XOR (a5 XOR b2)) XOR ((a4 AND a6) AND (b1 AND b3))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a1 AND a3) XOR (a5 XOR b2)) XOR ((a4 AND a6) AND (b1 AND b3))...
+      Errors: 1/31 at indices [5]...
+      Residual pattern: a0 AND (a4 AND b0) (matches 96.8%)
+      Current OR Residual = 96.8%
+      Current XOR Residual = 96.8%
+      Current AND Residual = 54.8%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 96.8%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 96.8%
+      Best pattern: (4-Var: (a1 AND a3) XOR (a5 XOR b2)) XOR ((a4 AND a6) AND (b1 AND b3))
+  > Quick-solve result: 96.8%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b0 - best accuracy=0.9677 [62.2s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=96.8%)
+      [STORED] Fractal rule saved to library
+  Bit 0: ✓ acc=0.968 | (((a1 AND a3) XOR (a5 XOR b2)) XOR ((a4 AND a6) AND (b1 AND b3))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1 1 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 71.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 77.4%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 83.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 83.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 87.1%
+      Best carry-out: 87.1%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 87.1%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 87.1%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 87.1%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 87.1%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 87.1%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 87.1%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a0 XOR b7) XOR (a4 OR b5)...
+      Errors: 4/31 at indices [ 2  6 20 23]...
+      Residual pattern: (a0 AND a1) AND (a3 AND a4) (matches 96.8%)
+      Current OR Residual = 90.3%
+      [IMPROVED!] (4-Var: (a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))...
+      Errors: 3/31 at indices [ 2 20 23]...
+      Residual pattern: (a0 AND a1) AND (a4 AND b5) (matches 96.8%)
+      Current OR Residual = 90.3%
+      Current XOR Residual = 96.8%
+      [IMPROVED!] ((4-Var: (a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))) XOR ((a0 AND a1) AND (a4 AND b5))
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((4-Var: (a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))) XOR ((a0 AND a1) AND (a4 AND b5))...
+      Errors: 1/31 at indices [2]...
+      Residual pattern: a0 AND (a1 AND a2) (matches 96.8%)
+      Current OR Residual = 96.8%
+      Current XOR Residual = 96.8%
+      Current AND Residual = 45.2%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 3 level(s), final accuracy: 96.8%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 96.8%
+      Best pattern: ((4-Var: (a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))) XOR ((a0 AND a1) AND (a4 AND b5))
+  > Quick-solve result: 96.8%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b1 - best accuracy=0.9677 [86.5s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=96.8%)
+      [STORED] Fractal rule saved to library
+  Bit 1: ✓ acc=0.968 | ((((a0 XOR b7) XOR (a4 OR b5)) OR ((a0 AND a1) AND (a3 AND a4))) XOR ((a0 AND a1) AND (a4 AND b5))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 1 0 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 67.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 77.4%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 83.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 83.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 87.1%
+      Best carry-out: 87.1%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 87.1%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 87.1%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 87.1%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 87.1%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 87.1%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 87.1%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a4 XOR a5) AND (b1 XNOR b4)...
+      Errors: 4/31 at indices [ 5 18 23 24]...
+      Residual pattern: b7 AND (a1 XOR b0) (matches 93.5%)
+      Current OR Residual = 93.5%
+      [IMPROVED!] (4-Var: (a4 XOR a5) AND (b1 XNOR b4)) OR (b7 AND (a1 XOR b0))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a4 XOR a5) AND (b1 XNOR b4)) OR (b7 AND (a1 XOR b0))...  
+      Errors: 2/31 at indices [ 5 20]...
+      Residual pattern: a0 AND (a3 XOR b3) (matches 93.5%)
+      Current OR Residual = 90.3%
+      Current XOR Residual = 93.5%
+      Current AND Residual = 64.5%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 93.5%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 93.5%
+      Best pattern: (4-Var: (a4 XOR a5) AND (b1 XNOR b4)) OR (b7 AND (a1 XOR b0))
+  > Quick-solve result: 93.5%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b2 - best accuracy=0.9355 [68.8s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=93.5%)
+      [STORED] Fractal rule saved to library
+  Bit 2: ✓ acc=0.935 | (((a4 XOR a5) AND (b1 XNOR b4)) OR (b7 AND (a1 XOR b0))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 1 1 0 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 67.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 77.4%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 80.6%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 80.6%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 87.1%
+      Best carry-out: 87.1%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 87.1%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 87.1%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 87.1%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 87.1%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 87.1%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 87.1%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a0 OR a6) XOR (a4 AND b4)...
+      Errors: 4/31 at indices [10 11 14 15]...
+      Residual pattern: a2 AND (b0 AND b6) (matches 93.5%)
+      Current OR Residual = 87.1%
+      Current XOR Residual = 93.5%
+      [IMPROVED!] (4-Var: (a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))...   
+      Errors: 2/31 at indices [11 14]...
+      Residual pattern: (a4 AND a6) AND (b1 AND b3) (matches 96.8%)
+      Current OR Residual = 93.5%
+      Current XOR Residual = 96.8%
+      [IMPROVED!] ((4-Var: (a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))) XOR ((a4 AND a6) AND (b1 AND b3))        
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((4-Var: (a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))) XOR ((a4 AND a6) AND (b1 AND b3))...
+      Errors: 1/31 at indices [14]...
+      Residual pattern: a0 AND (a4 AND b0) (matches 96.8%)
+      Current OR Residual = 96.8%
+      Current XOR Residual = 96.8%
+      Current AND Residual = 38.7%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 3 level(s), final accuracy: 96.8%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 96.8%
+      Best pattern: ((4-Var: (a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))) XOR ((a4 AND a6) AND (b1 AND b3))      
+  > Quick-solve result: 96.8%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b3 - best accuracy=0.9677 [67.2s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=96.8%)
+      [STORED] Fractal rule saved to library
+  Bit 3: ✓ acc=0.968 | ((((a0 OR a6) XOR (a4 AND b4)) XOR (a2 AND (b0 AND b6))) XOR ((a4 AND a6) AND (b1 AND b3))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 1 1 1 1 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 77.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 77.4%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 80.6%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 80.6%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 87.1%
+      Best carry-out: 87.1%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 87.1%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 87.1%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 87.1%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 87.1%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 87.1%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 87.1%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a3 XOR a4) XOR (b0 XOR b3)...
+      Errors: 4/31 at indices [ 1  7  9 14]...
+      Residual pattern: a2 AND (a4 XOR b7) (matches 90.3%)
+      Current OR Residual = 90.3%
+      [IMPROVED!] (4-Var: (a3 XOR a4) XOR (b0 XOR b3)) OR (a2 AND (a4 XOR b7))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a3 XOR a4) XOR (b0 XOR b3)) OR (a2 AND (a4 XOR b7))...   
+      Errors: 3/31 at indices [ 1  9 14]...
+      Residual pattern: a0 AND (a4 AND b0) (matches 90.3%)
+      Current OR Residual = 90.3%
+      Current XOR Residual = 90.3%
+      Current AND Residual = 38.7%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 90.3%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 90.3%
+      Best pattern: (4-Var: (a3 XOR a4) XOR (b0 XOR b3)) OR (a2 AND (a4 XOR b7))
+  > Quick-solve result: 90.3%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b4 - best accuracy=0.9032 [82.4s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=90.3%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO161_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=0.903 | (((a3 XOR a4) XOR (b0 XOR b3)) OR (a2 AND (a4 XOR b7))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 1 0 0]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 77.4%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 80.6%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 83.9%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 83.9%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 87.1%
+      Best carry-out: 87.1%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 87.1%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 87.1%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 87.1%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 87.1%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 87.1%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 87.1%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a1 XOR a2) XOR (a5 AND b4)...
+      Errors: 4/31 at indices [ 4 18 21 23]...
+      Residual pattern: (a4 AND a6) AND (b3 AND b7) (matches 96.8%)
+      Current OR Residual = 93.5%
+      [IMPROVED!] (4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))...
+      Errors: 2/31 at indices [ 4 18]...
+      Residual pattern: a2 AND (b2 AND b7) (matches 96.8%)
+      Current OR Residual = 93.5%
+      Current XOR Residual = 96.8%
+      [IMPROVED!] ((4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))) XOR (a2 AND (b2 AND b7))        
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))) XOR (a2 AND (b2 AND b7))...
+      Errors: 1/31 at indices [4]...
+      Residual pattern: a7 XOR (a6 OR b4) (matches 100.0%)
+      Current OR Residual = 96.8%
+      Current XOR Residual = 100.0%
+      [IMPROVED!] (((4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))) XOR (a2 AND (b2 AND b7))) XOR (a7 XOR (a6 OR b4))
+      *** FOUND COMPLETE TRUTH at level 3! ***
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO161_b5 discovered via Fractal! [0.0s total, 34.3s]
+      Pattern: (((4-Var: (a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))) XOR (a2 AND (b2 AND b7))) XOR (a7 XOR (a6 OR b4))
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO161_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | (((((a1 XOR a2) XOR (a5 AND b4)) OR ((a4 AND a6) AND (b3 AND b7))) XOR (a2 AND (b2 AND b7))) XOR (a7 XOR (a6 OR b4))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 0 1 1]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.6%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.5%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.5%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.5%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 96.8%
+      Best carry-out: 96.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      [ADDER DETECTED] Using smart bit selection...
+      Best ripple sum: 96.8%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA2...
+      Best carry LA2: 96.8%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      [ADDER DETECTED] Using smart bit selection for RippleSum3...
+      Best ripple sum3: 96.8%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      [ADDER DETECTED] Using smart bit selection for CarryLA3...
+      Best carry LA3: 96.8%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      [ADDER DETECTED] Using smart bit selection for RippleSum4...
+      Best ripple sum4: 96.8%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 96.8%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (a0 AND a4) OR (b5 OR b7)...
+      Errors: 1/31 at indices [14]...
+      Residual pattern: a0 AND (a4 AND b0) (matches 96.8%)
+      Current OR Residual = 96.8%
+      Current XOR Residual = 96.8%
+      Current AND Residual = 35.5%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 96.8%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1980597
+      Best accuracy achieved: 96.8%
+      Best pattern: 4-Var: (a0 AND a4) OR (b5 OR b7)
+  > Quick-solve result: 96.8%, falling back to evolution...
+  > Running fractal evolution (pop=4000, gens=120)...
+[FRACTAL RESULT] SPARC_DDO161_b6 - best accuracy=0.9677 [44.9s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=96.8%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO161_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=0.968 | ((a0 AND a4) OR (b5 OR b7)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO161_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 31 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 0 0 0]
+      a0: [0 0 1 0 1 1 1 0]
+      a1: [0 1 1 1 0 0 1 1]
+      a2: [0 1 1 1 1 1 0 1]
+      a3: [0 0 0 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (31) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 93.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] b6 OR b7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO161_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: b6 OR b7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO161_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.000 | (b6 OR b7) [latch?]
+
+[SAVED] DDO161 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO161_discovered.json    
+
+[8/10] DDO168
+
+============================================================
+🌌 DISCOVERY: DDO168 (10 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_DDO168_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 0 1 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 90.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] NOT(a0) AND a4 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: NOT(a0) AND a4
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | (NOT(a0) AND a4)
+
+[FRACTAL RESEARCH] SPARC_DDO168_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 0 0 0]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 90.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 90.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a1 XOR (a5 XOR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a1 XOR (a5 XOR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | (a1 XOR (a5 XOR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 1 0 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 90.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b5 XOR (a1 OR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b2 discovered via Fractal! [0.0s total, 0.2s]
+      Pattern: 3-Var: b5 XOR (a1 OR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | (b5 XOR (a1 OR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 1 1 0 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 90.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 90.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a0 XOR (a1 AND b6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 3-Var: a0 XOR (a1 AND b6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | (a0 XOR (a1 AND b6)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 0 1 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 90.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a6 XOR (b0 XOR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b4 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a6 XOR (b0 XOR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | (a6 XOR (b0 XOR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 1 1 1 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 90.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a1 OR a5 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a1 OR a5
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | (a1 OR a5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 1 1 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 90.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a2 OR a3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a2 OR a3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO168_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | (a2 OR a3) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO168_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 10 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 1 1 1 1 1]
+      a0: [0 0 1 0 1 1 0 0]
+      a1: [0 1 0 0 0 1 1 1]
+      a2: [0 0 1 0 0 0 1 1]
+      a3: [0 0 0 0 0 1 1 1]
+      Data type: SEQUENTIAL (Few examples (10) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderCarryOutGene(width=8) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO168_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderCout: carry_out(8)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_DDO168_b7' -> 'Add8_Cout' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | RippleAdderCout[8]: carry_out(8)
+
+[SAVED] DDO168 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO168_discovered.json    
+
+[9/10] DDO170
+
+============================================================
+🌌 DISCOVERY: DDO170 (8 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_DDO170_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 1 0 0]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a0 AND a3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b0 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a0 AND a3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | (a0 AND a3)
+
+[FRACTAL RESEARCH] SPARC_DDO170_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 1 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a0 OR b3 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b1 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a0 OR b3
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | (a0 OR b3) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO170_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1 1 1 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a1 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b2 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a1
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_DDO170_b2' -> 'SPARC_D512_2_b3' (equivalent pattern)
+  Bit 2: ✓ acc=1.000 | Out[i] = a1[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO170_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 0 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 75.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a3 XOR a5 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b3 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a3 XOR a5
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | (a3 XOR a5) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO170_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 0 0 0 0 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 87.5%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] a0 AND NOT(a6) -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b4 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: a0 AND NOT(a6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | (a0 AND NOT(a6))
+
+[FRACTAL RESEARCH] SPARC_DDO170_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 0 1 1 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+      [MATCH] RippleAdderSumBitGene(bit=7) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b5 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: RippleAdderSumBit: S7 = (a7 XOR b7) XOR carry_in(7)
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_DDO170_b5' -> 'Add8_S7' (equivalent pattern)
+  Bit 5: ✓ acc=1.000 | RippleAdderSumBit[7]: (a7 XOR b7) XOR carry_in(7) [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO170_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a4 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b6 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a4
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | Out[i] = a4[i] OR Out[i] [latch?]
+
+[FRACTAL RESEARCH] SPARC_DDO170_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 8 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 1 1 1 1]
+      a0: [0 0 1 0 0 1 0 1]
+      a1: [0 1 1 1 1 1 1 1]
+      a2: [0 1 0 1 1 0 1 0]
+      a3: [0 1 1 1 1 1 1 0]
+      Data type: SEQUENTIAL (Few examples (8) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = a7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_DDO170_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = a7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_DDO170_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.000 | Out[i] = a7[i] OR Out[i] [latch?]
+
+[SAVED] DDO170 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\DDO170_discovered.json    
+
+[10/10] ESO079-G014
+
+============================================================
+🌌 DISCOVERY: ESO079-G014 (15 points)
+============================================================
+[OPTION 1] Renaming vbar->a0..a7, r->b0..b7 for macro compatibility
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 1 1 1 1]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 86.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.3%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.3%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+      [MATCH] b6 XOR (a3 AND b2 AND b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b0 discovered via Fractal! [0.0s total, 0.4s]
+      Pattern: 4-Var: b6 XOR (a3 AND b2 AND b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b0' added to bootstrap curriculum
+  Bit 0: ✓ acc=1.000 | (b6 XOR (a3 AND (b2 AND b5))) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 0 0 0 0 0]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 86.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.3%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.3%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a0 XOR a6) AND (a1 XOR b0) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b1 discovered via Fractal! [0.0s total, 0.7s]
+      Pattern: 4-Var: (a0 XOR a6) AND (a1 XOR b0)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.000 | ((a0 XOR a6) AND (a1 XOR b0)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 1 1 1 0 0 1]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 93.3%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 93.3%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      [MATCH] (a0 OR a1) AND (b0 XOR b3) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b2 discovered via Fractal! [0.0s total, 0.9s]
+      Pattern: 4-Var: (a0 OR a1) AND (b0 XOR b3)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.000 | ((a0 OR a1) AND (b0 XOR b3)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 0 1 0 1]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 80.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b3 XOR (a0 AND a6) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b3 discovered via Fractal! [0.0s total, 0.4s]
+      Pattern: 3-Var: b3 XOR (a0 AND a6)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.000 | (b3 XOR (a0 AND a6)) [latch?, carry?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 1 0 1 1 1 1 0]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b5 OR (a1 XOR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b4 discovered via Fractal! [0.0s total, 0.5s]
+      Pattern: 3-Var: b5 OR (a1 XOR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.000 | (b5 OR (a1 XOR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 1 1 0 1 0 1]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 73.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 93.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] a0 XOR (b3 OR b4) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b5 discovered via Fractal! [0.0s total, 0.1s]
+      Pattern: 3-Var: a0 XOR (b3 OR b4)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.000 | (a0 XOR (b3 OR b4)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 1 1 0 0]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 80.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 86.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+      [MATCH] b7 OR (b3 AND b5) -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b6 discovered via Fractal! [0.0s total, 0.6s]
+      Pattern: 3-Var: b7 OR (b3 AND b5)
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'SPARC_ESO079_G014_b6' added to bootstrap curriculum
+  Bit 6: ✓ acc=1.000 | (b7 OR (b3 AND b5)) [latch?]
+
+[FRACTAL RESEARCH] SPARC_ESO079_G014_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 15 examples
+      Variables: ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'b0', 'b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7']
+      Target sample: [0 0 0 0 0 0 1 1]
+      a0: [0 1 0 1 1 0 1 0]
+      a1: [0 1 1 0 0 0 0 1]
+      a2: [0 0 1 1 1 0 1 1]
+      a3: [0 1 1 1 1 1 0 1]
+      Data type: SEQUENTIAL (Few examples (15) for 16 vars suggests chain)
+
+      [EXACT RIPPLE ADDER] Trying RippleAdderSumBitGene for all bit indices...
+
+      [EXACT DIVIDER] Trying UnsignedDivQuotBitGene for bit indices 0..7...
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 93.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      [MATCH] b6 OR b7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] SPARC_ESO079_G014_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: 2-Var: b6 OR b7
+      Accuracy: 100.00%
+      [ALIAS] 'SPARC_ESO079_G014_b7' -> 'SPARC_DDO161_b7' (equivalent pattern)
+  Bit 7: ✓ acc=1.000 | (b6 OR b7) [latch?]
+
+[SAVED] ESO079-G014 → C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\sparc_discovered\ESO079-G014_discovered.json
+
+============================================================
+
+============================================================
+📊 CROSS-GALAXY PATTERN ANALYSIS
+============================================================
+
+Analyzed 10 galaxies
+
+BIT | AVG_ACC | GALAXIES | UNIQUE_FORMULAS | TOP_FORMULA
+--------------------------------------------------------------------------------
+ 7  |  1.000 |       10 |               6 |  40.0%: RippleAdderCout[8]: carry_out(8)
+ 6  |  0.997 |       10 |              10 |  10.0%: Out[i] = b6[i] OR Out[i]
+ 5  |  1.000 |       10 |              10 |  10.0%: (b0 OR b1)
+ 4  |  0.990 |       10 |              10 |  10.0%: (a4 XOR b1)
+ 3  |  0.997 |       10 |              10 |  10.0%: (a5 AND (a0 XNOR a4))
+ 2  |  0.994 |       10 |              10 |  10.0%: (NOT(a0) AND b1)
+ 1  |  0.997 |       10 |              10 |  10.0%: (a1 XOR (a0 OR b6))
+ 0  |  0.997 |       10 |              10 |  10.0%: (b3 XOR b6)
+
+============================================================
+🔬 DETAILED BIT 7 (MSB) FORMULAS
+============================================================
+
+ 40.0% (  4 galaxies): RippleAdderCout[8]: carry_out(8)
+       Examples: D512-2, D564-8, DDO064, DDO168
+
+ 20.0% (  2 galaxies): (b6 OR b7)
+       Examples: DDO161, ESO079-G014
+
+ 10.0% (  1 galaxies): Out[i] = b7[i] OR Out[i]
+       Examples: CamB
+
+ 10.0% (  1 galaxies): (b2 OR b3)
+       Examples: D631-7
+
+ 10.0% (  1 galaxies): (a5 OR b6)
+       Examples: DDO154
+
+ 10.0% (  1 galaxies): Out[i] = a7[i] OR Out[i]
+       Examples: DDO170
+
+============================================================
+🔬 DETAILED BIT 6 FORMULAS
+============================================================
+
+ 10.0% (  1 galaxies): Out[i] = b6[i] OR Out[i]
+       Examples: CamB
+
+ 10.0% (  1 galaxies): RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5)
+       Examples: D512-2
+
+ 10.0% (  1 galaxies): RippleAdderSumBit[7]: (a7 XOR b7) XOR carry_in(7)
+
+============================================================
+🔬 DETAILED BIT 6 FORMULAS
+
+============================================================
+
+============================================================
+🔬 DETAILED BIT 6 FORMULAS
+============================================================
+
+ 10.0% (  1 galaxies): Out[i] = b6[i] OR Out[i]
+       Examples: CamB
+
+ 10.0% (  1 galaxies): RippleAdderSumBit[5]: (a5 XOR b5) XOR carry_in(5)
+       Examples: D512-2
+
+ 10.0% (  1 galaxies): RippleAdderSumBit[7]: (a7 XOR b7) XOR carry_in(7)
+       Examples: D564-8
+
+ 10.0% (  1 galaxies): (a7 XOR (a6 AND b6))
+       Examples: D631-7
+
+ 10.0% (  1 galaxies): (a1 OR (b2 OR b7))
+       Examples: DDO064
+
+ 10.0% (  1 galaxies): (a3 OR b5)
+       Examples: DDO154
+
+ 10.0% (  1 galaxies): ((a0 AND a4) OR (b5 OR b7))
+       Examples: DDO161
+
+ 10.0% (  1 galaxies): (a2 OR a3)
+       Examples: DDO168
+
+ 10.0% (  1 galaxies): Out[i] = a4[i] OR Out[i]
+       Examples: DDO170
+
+ 10.0% (  1 galaxies): (b7 OR (b3 AND b5))
+       Examples: ESO079-G014

@@ -1,0 +1,577 @@
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/.venv/Scripts/python.exe C:/Users/alxth/OneDrive/Documents/GitHub/ude-core/dark_matter/dark_matter_discovery.py --discover --force --exact
+[LIBRARY] Loaded 102 discovered ops
+============================================================
+🌌 DARK MATTER / MOND DISCOVERY ENGINE
+============================================================
+
+The Mystery: Galaxy stars move TOO FAST at the edges!
+  - Newton predicts: V ∝ 1/√r (slows down)
+  - Reality: V stays FLAT (constant speed)
+
+[DATA] M33 Triangulum Galaxy (50 points)
+  Radius: 0.1 - 20.0 kpc
+  V_baryon: 2.2 - 68.2 km/s
+  V_obs: 6.9 - 131.5 km/s
+  Edge discrepancy: V_obs/V_baryon = 2.49x
+
+============================================================
+🌌 DARK MATTER / MOND DISCOVERY
+============================================================
+
+[DATA] Discretized to 8-bit representation
+  V_baryon range: 0 - 255
+  V_obs range: 0 - 255
+
+[DISCOVERY] Finding formulas for each bit of V_obs...
+
+[FRACTAL RESEARCH] DM_Vobs_b0: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 0 1 0 0 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 60.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 70.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 74.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 74.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 80.0%
+      Best carry-out: 80.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 84.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 84.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 84.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 84.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 84.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 84.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)...
+      Errors: 8/50 at indices [ 2 12 13 17 21 23 34 44]...
+      Residual pattern: (x3 AND x10) AND (x13 AND x14) (matches 90.0%)
+      Current OR Residual = 88.0%
+      [IMPROVED!] (RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))...
+      Errors: 6/50 at indices [ 2 12 13 17 34 44]...
+      Residual pattern: (x0 AND x4) AND (x5 AND x12) (matches 92.0%)
+      Current OR Residual = 90.0%
+      [IMPROVED!] ((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))...
+      Errors: 5/50 at indices [ 2 12 13 34 44]...
+      Residual pattern: (x0 AND x1) AND (x12 AND x13) (matches 92.0%)
+      Current OR Residual = 90.0%
+      Current XOR Residual = 92.0%
+      [IMPROVED!] (((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))) XOR ((x0 AND x1) AND (x12 AND x13))
+
+      [RESIDUAL TRUTH L4] Analyzing what's missing from (((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))) XOR ((x0 AND x1) AND (x12 AND x13))...
+      Errors: 4/50 at indices [ 2 13 36 44]...
+      Residual pattern: (x0 AND x1) AND (x8 AND x12) (matches 94.0%)
+      Current OR Residual = 92.0%
+      Current XOR Residual = 94.0%
+      [IMPROVED!] ((((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))) XOR ((x0 AND x1) AND (x12 AND x13))) XOR ((x0 AND x1) AND (x8 AND x12))
+
+      [RESIDUAL TRUTH L5] Analyzing what's missing from ((((RippleSum: (x14 XOR x15) XOR CarryOut(x13,x6,x12,x5)) OR ((x3 AND x10) AND (x13 AND x14))) OR ((x0 AND x4) AND (x5 AND x12))) XOR ((x0 AND x1) AND (x12 AND x13))) XOR ((x0 AND x1) AND (x8 AND x12))...
+      Errors: 3/50 at indices [ 2 13 44]...
+      Residual pattern: x5 AND (x14 AND x15) (matches 94.0%)
+      Current OR Residual = 94.0%
+      Current XOR Residual = 94.0%
+      Current AND Residual = 60.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 5 level(s), final accuracy: 94.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b0 discovered via Fractal! [0.0s total, 531.3s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [2627, 5246, 10702, 11995, 13541, 14829, 18683, 20221, 22783, 28155, 30712, 33524, 34802, 36079, 45279, 60105, 61383, 62661, 63940, 65474]
+      Accuracy: 100.00%
+      [EXISTS] Pattern already stored as 'DM_Vobs_b0'
+  Bit 0: ✓ acc=1.0000 | UnarySet[x16]: [2627, 5246, 10702, 11995, 13541, 14829, 18683, 20221, 22783, 28155, 30712, 33524, 34802, 36079, 45279, 60105, 61383, 62661, 63940, 65474]
+
+[FRACTAL RESEARCH] DM_Vobs_b1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 1 0 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 72.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 74.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 1 0 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 72.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 74.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 82.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 82.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 92.0%
+      Best carry-out: 92.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 92.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 92.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 92.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 92.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 92.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 92.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (x12 AND x5) XOR (x13 XOR x14)...
+      Errors: 4/50 at indices [16 19 24 44]...
+      Residual pattern: (x1 AND x2) AND (x5 AND x9) (matches 96.0%)
+      Current OR Residual = 96.0%
+      [IMPROVED!] (4-Var: (x12 AND x5) XOR (x13 XOR x14)) OR ((x1 AND x2) AND (x5 AND x9))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (x12 AND x5) XOR (x13 XOR x14)) OR ((x1 AND x2) AND (x5 AND x9))...
+      Errors: 2/50 at indices [24 44]...
+      Residual pattern: x5 AND (x14 AND x15) (matches 96.0%)
+      Current OR Residual = 96.0%
+      Current XOR Residual = 96.0%
+      Current AND Residual = 42.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 96.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b1 discovered via Fractal! [0.0s total, 822.2s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [5246, 8108, 9407, 10702, 11995, 17400, 18683, 20221, 21502, 25342, 29434, 30712, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b1' added to bootstrap curriculum
+  Bit 1: ✓ acc=1.0000 | UnarySet[x16]: [5246, 8108, 9407, 10702, 11995, 17400, 18683, 20221, 21502, 25342, 29434, 30712, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571]
+
+[FRACTAL RESEARCH] DM_Vobs_b2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 1 0 0 0 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 78.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 82.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 90.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 90.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 90.0%
+      Best carry-out: 90.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 90.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 90.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 90.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 92.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 92.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 92.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from CarryLA3: c3 [x15,x6,x1,x8,x0,x5,x2,x7]...
+      Errors: 5/50 at indices [13 17 18 20 22]...
+      Residual pattern: (x2 AND x3) AND (x4 AND x11) (matches 94.0%)
+      Current OR Residual = 90.0%
+      Current XOR Residual = 94.0%
+      [IMPROVED!] (CarryLA3: c3 [x15,x6,x1,x8,x0,x5,x2,x7]) XOR ((x2 AND x3) AND (x4 AND x11))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (CarryLA3: c3 [x15,x6,x1,x8,x0,x5,x2,x7]) XOR ((x2 AND x3) AND (x4 AND x11))...
+      Errors: 3/50 at indices [13 15 22]...
+      Residual pattern: (x0 AND x2) AND (x5 AND x9) (matches 96.0%)
+      Current OR Residual = 94.0%
+      Current XOR Residual = 96.0%
+      [IMPROVED!] ((CarryLA3: c3 [x15,x6,x1,x8,x0,x5,x2,x7]) XOR ((x2 AND x3) AND (x4 AND x11))) XOR ((x0 AND x2) AND (x5 AND x9))
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((CarryLA3: c3 [x15,x6,x1,x8,x0,x5,x2,x7]) XOR ((x2 AND x3) AND (x4 AND x11))) XOR ((x0 AND x2) AND (x5 AND x9))...
+      Errors: 2/50 at indices [13 22]...
+      Residual pattern: x5 AND (x14 AND x15) (matches 96.0%)
+      Current OR Residual = 96.0%
+      Current XOR Residual = 96.0%
+      Current AND Residual = 28.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 3 level(s), final accuracy: 96.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b2 discovered via Fractal! [0.0s total, 763.6s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [1314, 3937, 10702, 13541, 14829, 16115, 18683, 21502, 24062, 25342, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b2' added to bootstrap curriculum
+  Bit 2: ✓ acc=1.0000 | UnarySet[x16]: [1314, 3937, 10702, 13541, 14829, 16115, 18683, 21502, 24062, 25342, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+
+[FRACTAL RESEARCH] DM_Vobs_b3: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 1 0 1 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 82.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 84.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 88.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 88.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 90.0%
+      Best carry-out: 90.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 90.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 92.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 92.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 94.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 94.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 94.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from CarryLA3: c3 [x15,x7,x0,x12,x13,x5,x2,x9]...
+      Errors: 5/50 at indices [ 4 11 14 17 18]...
+      Residual pattern: (x0 AND x1) AND (x5 AND x14) (matches 92.0%)
+      Current OR Residual = 90.0%
+      Current XOR Residual = 92.0%
+      Current AND Residual = 22.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 94.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b3 discovered via Fractal! [0.0s total, 615.6s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [3937, 6807, 8108, 9407, 13541, 16115, 20221, 21502, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b3' added to bootstrap curriculum
+  Bit 3: ✓ acc=1.0000 | UnarySet[x16]: [3937, 6807, 8108, 9407, 13541, 16115, 20221, 21502, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]   
+
+[FRACTAL RESEARCH] DM_Vobs_b4: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 1 1 0 1 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 84.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 84.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 88.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 88.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 90.0%
+      Best carry-out: 90.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 90.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 92.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 92.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 94.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 94.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 94.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from CarryLA3: c3 [x12,x6,x15,x7,x2,x8,x13,x3]...
+      Errors: 5/50 at indices [ 1  5  9 10 16]...
+      Residual pattern: (x1 AND x2) AND (x4 AND x9) (matches 92.0%)
+      Current OR Residual = 90.0%
+      Current XOR Residual = 92.0%
+      Current AND Residual = 20.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 94.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b4 discovered via Fractal! [0.0s total, 764.7s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [3937, 5246, 8108, 10702, 14829, 16115, 22783, 24062, 25342, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b4' added to bootstrap curriculum
+  Bit 4: ✓ acc=1.0000 | UnarySet[x16]: [3937, 5246, 8108, 10702, 14829, 16115, 22783, 24062, 25342, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+
+[FRACTAL RESEARCH] DM_Vobs_b5: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 1 0 0 1 0 0 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 84.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 92.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 94.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 94.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 96.0%
+      Best carry-out: 96.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 96.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 96.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 96.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 96.0%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 96.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 96.0%
+
+      [SKIP] Example-index binary fractals disabled
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (x0 XOR x6) OR (x14 OR x15)...
+      Errors: 2/50 at indices [1 5]...
+      Residual pattern: x5 AND (x14 AND x15) (matches 96.0%)
+      Current OR Residual = 96.0%
+      Current XOR Residual = 96.0%
+      Current AND Residual = 18.0%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 96.0%
+      [MATCH] UnarySetMembershipGene(partial,width=16) -> 100.0%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b5 discovered via Fractal! [0.0s total, 863.8s]
+      Pattern: UnarySetMembership(partial): x[0..15] in [1314, 5246, 9407, 10702, 17400, 18683, 20221, 21502, 22783, 24062, 25342, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b5' added to bootstrap curriculum
+  Bit 5: ✓ acc=1.0000 | UnarySet[x16]: [1314, 5246, 9407, 10702, 17400, 18683, 20221, 21502, 22783, 24062, 25342, 26877, 28155, 29434, 30712, 31990, 33524, 34802, 36079, 37357, 38635, 40169, 41446, 42724, 44002, 45279, 46813, 48091, 49369, 50647, 51925, 53459, 54737, 56015, 57293, 58571, 60105, 61383, 62661, 63940, 65474]
+
+[FRACTAL RESEARCH] DM_Vobs_b6: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 1 1 1 0 0 0]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 98.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 98.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 98.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 98.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 98.0%
+      Best carry-out: 98.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 98.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      [MATCH] CarryLA2 pattern -> 100%!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b6 discovered via Fractal! [0.0s total, 14.3s]
+      Pattern: CarryLA2: g2|(p2&g1)|(p2&p1&g0) [x5,x6,x0,x11,x15,x7]
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+  Bit 6: ✓ acc=1.0000 | (((x5 AND x6) OR ((x5 OR x6) AND (x0 AND x11))) OR (((x5 OR x6) AND (x0 OR x11)) AND (x15 AND x7)))
+
+[FRACTAL RESEARCH] DM_Vobs_b7: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 50 examples
+      Variables: ['x0', 'x1', 'x2', 'x3', 'x4', 'x5', 'x6', 'x7', 'x8', 'x9', 'x10', 'x11', 'x12', 'x13', 'x14', 'x15']
+      Target sample: [0 0 0 0 0 1 1 1]
+      x0: [0 0 1 1 0 1 0 1]
+      x1: [0 1 1 0 1 1 0 1]
+      x2: [0 0 0 0 1 1 1 1]
+      x3: [0 0 0 0 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (50) for 16 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      [MATCH] Out = x7 -> 100% accuracy!
+  >>> QUICK-SOLVE SUCCESS!
+[SUCCESS] DM_Vobs_b7 discovered via Fractal! [0.0s total, 0.0s]
+      Pattern: Direct: Out = x7
+      Accuracy: 100.00%
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'DM_Vobs_b7' added to bootstrap curriculum
+  Bit 7: ✓ acc=1.0000 | Out[i] = x7[i] OR Out[i]
+
+[SAVED] Results to C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\discovered_physics.json
+
+============================================================
+🔬 ANALYSIS
+============================================================
+
+[FORMULA ANALYSIS]
+  Uses V_baryon: False
+  Uses Radius: False
+  Uses XOR (additive): False
+  Uses AND (multiplicative): True
+
+  🔍 NOVEL SOLUTION
+  Unexpected dependency structure
+
+============================================================
+🔍 DISCOVERY: Novel physics relationship found
+============================================================

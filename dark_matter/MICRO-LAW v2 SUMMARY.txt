@@ -1,0 +1,574 @@
+PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> .\.venv\Scripts\Activate.ps1; python "c:\Users\alxth\OneDrive\Documents\GitHub\ude-core\dark_matter\microlaw_v2.py"
+C:\Users\alxth\OneDrive\Documents\GitHub\ude-core\.venv\Lib\site-packages\cupy\_environment.py:215: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+[GPU] CuPy available - using GPU acceleration
+============================================================
+🌌 MICRO-LAW DISCOVERY v2: GAS vs DISK (Optimized)
+============================================================
+GPU: CuPy
+Target accuracy: 88%
+Max generations: 150
+Pruning: Enabled
+
+Loading 31 galaxies (no bulge)...
+Loaded 297 total data points.
+Inputs: Gas(8) + Disk(8) + Radius(8) = 24 bits (no bulge)
+
+============================================================
+[BIT 6] STAGED DISCOVERY (target: 88%)
+============================================================
+
+[STAGE 1] Gas + Radius (16 variables)
+  [PRUNE] Removed 9 low-correlation vars: g0(0.07), r0(0.00), g1(0.04), g2(0.03), r2(0.04)...
+  [PRUNE] Kept 7 variables (threshold=0.1)
+  Variables: 7, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b6_stage1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r1', 'r3', 'r4', 'r5', 'g6', 'g7', 'r7']
+      Target sample: [0 1 1 1 1 0 1 1]
+      r1: [1 1 1 1 1 0 1 0]
+      r3: [1 1 1 1 1 0 1 1]
+      r4: [1 1 1 1 0 1 1 0]
+      r5: [1 1 1 1 1 0 1 1]
+      Data type: TABULAR (Default: assuming tabular data)
+      [FORCE] Trying fractal patterns despite tabular data
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 73.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 76.1%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 78.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 78.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 78.8%
+      Best carry-out: 78.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 78.8%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 78.8%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 78.8%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 78.8%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 78.8%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 3-Var: r3 OR (r5 OR r7)...
+      Errors: 63/297 at indices [ 0 10 15 16 26 27 35 37 50 57]...
+      Residual pattern: g6 AND g7 (matches 78.8%)
+      Current OR Residual = 78.8%
+      Current XOR Residual = 78.8%
+      Current AND Residual = 25.9%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 78.8%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 43768
+      Best accuracy achieved: 78.8%
+      Best pattern: 3-Var: r3 OR (r5 OR r7)
+  > Quick-solve result: 78.8%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b6_stage1 - best accuracy=0.7879 [44.1s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=78.8%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'MICROLAW2_b6_stage1' added to bootstrap curriculum
+  [STAGE 1 RESULT] Accuracy: 0.7879
+  Formula: (r3 OR (r5 OR r7))
+
+[STAGE 2] Gas + Disk + Radius (24 variables)
+  [PRUNE] Removed 4 low-correlation vars: d0(0.08), d2(0.08), d4(0.02), d5(0.08)
+  [PRUNE] Kept 11 variables (threshold=0.1)
+  Variables: 11, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b6_stage2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r1', 'r3', 'r4', 'r5', 'g6', 'g7', 'r7', 'd1', 'd3', 'd6', 'd7']
+      Target sample: [0 1 1 1 1 0 1 1]
+      r1: [1 1 1 1 1 0 1 0]
+      r3: [1 1 1 1 1 0 1 1]
+      r4: [1 1 1 1 0 1 1 0]
+      r5: [1 1 1 1 1 0 1 1]
+      Data type: SEQUENTIAL (Few examples (297) for 11 vars suggests chain)
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 73.7%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 76.1%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 78.8%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 78.8%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 79.8%
+      Best carry-out: 79.8%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 79.8%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 79.8%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 79.8%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 79.8%
+
+      [10-VAR RIPPLE SUM4] Trying (A XOR B) XOR CarryLA3...
+      Best ripple sum4: 79.8%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 79.8%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 79.8%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 79.8%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (r3 XOR r5) OR (r7 OR d6)...
+      Errors: 60/297 at indices [ 0  1  5 10 12 15 16 26 27 41]...
+      Residual pattern: (r3 AND d3) AND (d6 AND d7) (matches 80.1%)
+      Current OR Residual = 79.8%
+      Current XOR Residual = 80.1%
+      [IMPROVED!] (4-Var: (r3 XOR r5) OR (r7 OR d6)) XOR ((r3 AND d3) AND (d6 AND d7))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (r3 XOR r5) OR (r7 OR d6)) XOR ((r3 AND d3) AND (d6 AND d7))...
+      Errors: 59/297 at indices [ 0  1  5 10 12 15 16 26 27 41]...
+      Residual pattern: g6 AND g7 (matches 80.1%)
+      Current OR Residual = 80.1%
+      Current XOR Residual = 80.1%
+      Current AND Residual = 25.9%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 80.1%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 1284476
+      Best accuracy achieved: 80.1%
+      Best pattern: (4-Var: (r3 XOR r5) OR (r7 OR d6)) XOR ((r3 AND d3) AND (d6 AND d7))
+  > Quick-solve result: 80.1%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b6_stage2 - best accuracy=0.8013 [90.9s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=80.1%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'MICROLAW2_b6_stage2' added to bootstrap curriculum
+  [STAGE 2 RESULT] Accuracy: 0.8013
+  Formula: (((r3 XOR r5) OR (r7 OR d6)) XOR ((r3 AND d3) AND (d6 AND d7)))
+  Components: Gas=False, Disk=True, Radius=True
+
+============================================================
+[BIT 5] STAGED DISCOVERY (target: 88%)
+============================================================
+
+[STAGE 1] Gas + Radius (16 variables)
+  [PRUNE] Removed 8 low-correlation vars: g0(0.08), g1(0.08), g2(0.02), g3(0.04), r3(0.06)...
+  [PRUNE] Kept 8 variables (threshold=0.1)
+  Variables: 8, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b5_stage1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r0', 'r1', 'r2', 'r4', 'g6', 'r6', 'g7', 'r7']
+      Target sample: [0 1 1 1 0 0 0 0]
+      r0: [1 1 1 0 0 0 1 1]
+      r1: [1 1 1 1 1 0 1 0]
+      r2: [1 1 1 1 0 1 1 0]
+      r4: [1 1 1 1 0 1 1 0]
+      Data type: TABULAR (Default: assuming tabular data)
+      [FORCE] Trying fractal patterns despite tabular data
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 65.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 67.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 69.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 69.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 69.0%
+      Best carry-out: 69.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 69.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 69.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 69.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 69.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 69.0%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 69.0%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 69.0%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 3-Var: r7 OR (r1 XOR r2)...
+      Errors: 92/297 at indices [ 1  4  5  7 10 15 16 26 34 35]...
+      Residual pattern: (r0 AND r2) AND (r4 AND r6) (matches 70.0%)
+      Current OR Residual = 71.0%
+      [IMPROVED!] (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))...
+      Errors: 86/297 at indices [ 4  5  6  7 10 15 16 26 28 34]...
+      Residual pattern: r0 AND g7 (matches 71.0%)
+      Current OR Residual = 71.0%
+      Current XOR Residual = 71.0%
+      Current AND Residual = 34.7%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 71.0%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 92309
+      Best accuracy achieved: 71.0%
+      Best pattern: (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))
+  > Quick-solve result: 71.0%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b5_stage1 - best accuracy=0.7104 [78.2s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=71.0%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'MICROLAW2_b5_stage1' added to bootstrap curriculum
+  [STAGE 1 RESULT] Accuracy: 0.7104
+  Formula: ((r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6)))
+
+[STAGE 2] Gas + Disk + Radius (24 variables)
+  [PRUNE] Removed 8 low-correlation vars: d0(0.04), d1(0.02), d2(0.00), d3(0.02), d4(0.03)...
+  [PRUNE] Kept 8 variables (threshold=0.1)
+  Variables: 8, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b5_stage2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r0', 'r1', 'r2', 'r4', 'g6', 'r6', 'g7', 'r7']
+      Target sample: [0 1 1 1 0 0 0 0]
+      r0: [1 1 1 0 0 0 1 1]
+      r1: [1 1 1 1 1 0 1 0]
+      r2: [1 1 1 1 0 1 1 0]
+      r4: [1 1 1 1 0 1 1 0]
+      Data type: TABULAR (Default: assuming tabular data)
+      [FORCE] Trying fractal patterns despite tabular data
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 65.0%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 67.3%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 69.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 69.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 69.0%
+      Best carry-out: 69.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 69.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 69.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 69.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 69.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 69.0%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 69.0%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 69.0%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 3-Var: r7 OR (r1 XOR r2)...
+      Errors: 92/297 at indices [ 1  4  5  7 10 15 16 26 34 35]...
+      Residual pattern: (r0 AND r2) AND (r4 AND r6) (matches 70.0%)
+      Current OR Residual = 71.0%
+      [IMPROVED!] (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))...
+      Errors: 86/297 at indices [ 4  5  6  7 10 15 16 26 28 34]...
+      Residual pattern: r0 AND g7 (matches 71.0%)
+      Current OR Residual = 71.0%
+      Current XOR Residual = 71.0%
+      Current AND Residual = 34.7%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 2 level(s), final accuracy: 71.0%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 92309
+      Best accuracy achieved: 71.0%
+      Best pattern: (3-Var: r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6))
+  > Quick-solve result: 71.0%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b5_stage2 - best accuracy=0.7104 [44.9s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=71.0%)
+      [ALIAS] 'MICROLAW2_b5_stage2' -> 'MICROLAW2_b5_stage1' (equivalent pattern)
+  [STAGE 2 RESULT] Accuracy: 0.7104
+  Formula: ((r7 OR (r1 XOR r2)) OR ((r0 AND r2) AND (r4 AND r6)))
+  Components: Gas=False, Disk=False, Radius=True
+
+============================================================
+[BIT 4] STAGED DISCOVERY (target: 88%)
+============================================================
+
+[STAGE 1] Gas + Radius (16 variables)
+  [PRUNE] Removed 9 low-correlation vars: g0(0.07), g1(0.06), r1(0.10), g2(0.02), g3(0.02)...
+  [PRUNE] Kept 7 variables (threshold=0.1)
+  Variables: 7, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b4_stage1: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r0', 'r2', 'r5', 'g6', 'r6', 'g7', 'r7']
+      Target sample: [1 0 1 1 1 1 0 1]
+      r0: [1 1 1 0 0 0 1 1]
+      r2: [1 1 1 1 0 1 1 0]
+      r5: [1 1 1 1 1 0 1 1]
+      g6: [0 0 0 0 0 0 1 1]
+      Data type: TABULAR (Default: assuming tabular data)
+      [FORCE] Trying fractal patterns despite tabular data
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 62.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 65.0%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 65.3%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 65.3%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 67.3%
+      Best carry-out: 67.3%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 67.3%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 67.3%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 67.3%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 67.3%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 67.3%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (r0 XNOR r2) OR (r6 OR g6)...
+      Errors: 97/297 at indices [ 1  6 10 12 25 26 27 28 36 41]...
+      Residual pattern: r0 AND g7 (matches 67.3%)
+      Current OR Residual = 67.3%
+      Current XOR Residual = 67.3%
+      Current AND Residual = 37.4%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 1 level(s), final accuracy: 67.3%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 43768
+      Best accuracy achieved: 67.3%
+      Best pattern: 4-Var: (r0 XNOR r2) OR (r6 OR g6)
+  > Quick-solve result: 67.3%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b4_stage1 - best accuracy=0.6734 [58.0s]
+      [FAILED] No satisfactory solution found.
+  [STAGE 1] No pattern found
+
+[STAGE 2] Gas + Disk + Radius (24 variables)
+  [PRUNE] Removed 6 low-correlation vars: d0(0.07), d1(0.02), d2(0.00), d3(0.02), d4(0.09)...
+  [PRUNE] Kept 9 variables (threshold=0.1)
+  Variables: 9, Population: 500
+
+[FRACTAL RESEARCH] MICROLAW2_b4_stage2: Testing ALL fractal patterns...
+
+  [FRACTAL DEBUG] Searching patterns for 297 examples
+      Variables: ['r0', 'r2', 'r5', 'g6', 'r6', 'g7', 'r7', 'd6', 'd7']
+      Target sample: [1 0 1 1 1 1 0 1]
+      r0: [1 1 1 0 0 0 1 1]
+      r2: [1 1 1 1 0 1 1 0]
+      r5: [1 1 1 1 1 0 1 1]
+      g6: [0 0 0 0 0 0 1 1]
+      Data type: TABULAR (Default: assuming tabular data)
+      [FORCE] Trying fractal patterns despite tabular data
+
+      [DIRECT PATTERNS] Trying direct variable matches...
+      Best direct match: 62.3%
+
+      [2-VAR COMBINATIONAL] Trying A OP B patterns...
+      Best 2-var: 66.7%
+
+      [3-VAR COMBINATIONAL] Trying A OP (B OP' C) patterns...
+
+      [3-VAR AND/XOR] Trying A XOR (B AND C) patterns...
+      Best 3-var: 67.0%
+
+      [3-VAR WITH NOT] Trying (A AND NOT(B)) OP (B AND C) patterns...
+      Best 3-var with NOT: 67.0%
+
+      [4-VAR AND3/XOR] Trying A XOR (B AND C AND D) patterns...
+
+      [4-VAR COMBINATIONAL] Trying (A OP B) OP' (C OP'' D) patterns...
+      Best 4-var/majority: 68.0%
+      Best carry-out: 68.0%
+
+      [6-VAR RIPPLE SUM] Trying (A XOR B) XOR CarryOut(C,D,E,F)...
+      Best ripple sum: 68.0%
+
+      [6-VAR CARRY LA2] Trying g2|(p2&g1)|(p2&p1&g0)...
+      Best carry LA2: 68.0%
+
+      [8-VAR RIPPLE SUM3] Trying (A XOR B) XOR CarryLA2...
+      Best ripple sum3: 68.0%
+
+      [8-VAR CARRY LA3] Trying c3 = g3|(p3&g2)|(p3&p2&g1)|(p3&p2&p1&g0)...
+      Best carry LA3: 68.0%
+
+      [4-VAR WITH NOT] Trying comparison patterns with NOT...
+      Best 4-var with NOT: 68.0%
+
+      [BINARY FRACTAL] Trying Out[i] = Var[i] OP Out[i-1]...
+      Best binary fractal: 68.0%
+
+      [SEQUENTIAL MEMORY] Trying advanced memory patterns...
+      Best sequential memory: 68.0%
+
+      [RESIDUAL TRUTH L1] Analyzing what's missing from 4-Var: (r2 AND r6) OR (r5 OR d6)...
+      Errors: 95/297 at indices [ 1  6 13 25 26 27 28 39 41 43]...
+      Residual pattern: d7 AND (r2 XOR r5) (matches 69.4%)
+      Current OR Residual = 68.4%
+      [IMPROVED!] (4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))
+
+      [RESIDUAL TRUTH L2] Analyzing what's missing from (4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))...
+      Errors: 94/297 at indices [ 1  6 13 25 26 27 28 39 41 42]...
+      Residual pattern: (r5 OR g6) AND (d6 AND d7) (matches 69.4%)
+      Current OR Residual = 68.4%
+      Current XOR Residual = 69.4%
+      [IMPROVED!] ((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))
+
+      [RESIDUAL TRUTH L3] Analyzing what's missing from ((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))...
+      Errors: 91/297 at indices [ 1  6 13 25 26 27 28 39 41 42]...
+      Residual pattern: (r2 AND r5) AND (d6 AND d7) (matches 69.7%)
+      Current OR Residual = 69.7%
+      [IMPROVED!] (((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))
+
+      [RESIDUAL TRUTH L4] Analyzing what's missing from (((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))...
+      Errors: 90/297 at indices [ 1  6 13 25 26 27 28 39 41 42]...
+      Residual pattern: (r0 AND r5) AND (r6 AND d7) (matches 70.0%)
+      Current OR Residual = 69.7%
+      Current XOR Residual = 70.0%
+      [IMPROVED!] ((((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))) XOR ((r0 AND r5) AND (r6 AND d7))
+
+      [RESIDUAL TRUTH L5] Analyzing what's missing from ((((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))) XOR ((r0 AND r5) AND (r6 AND d7))...
+      Errors: 89/297 at indices [ 6 13 25 26 27 28 39 41 42 50]...
+      Residual pattern: r0 AND g7 (matches 70.0%)
+      Current OR Residual = 70.0%
+      Current XOR Residual = 70.0%
+      Current AND Residual = 37.4%
+      No improvement from residual combination
+      [RESIDUAL SUMMARY] Completed 5 level(s), final accuracy: 70.0%
+      [SKIP] UnarySetMembershipGene disabled
+
+      [SUMMARY] Total candidates tried: 205351
+      Best accuracy achieved: 70.0%
+      Best pattern: ((((4-Var: (r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))) XOR ((r0 AND r5) AND (r6 AND d7))
+  > Quick-solve result: 70.0%, falling back to evolution...
+  > Running fractal evolution (pop=500, gens=150)...
+[FRACTAL RESULT] MICROLAW2_b4_stage2 - best accuracy=0.7003 [74.3s]
+      [PARTIAL SUCCESS] Accepting best found rule (accuracy=70.0%)
+      [STORED] Fractal rule saved to library
+      [AUTO-APPEND] Task 'MICROLAW2_b4_stage2' added to bootstrap curriculum
+  [STAGE 2 RESULT] Accuracy: 0.7003
+  Formula: ((((((r2 AND r6) OR (r5 OR d6)) OR (d7 AND (r2 XOR r5))) XOR ((r5 OR g6) AND (d6 AND d7))) OR ((r2 AND r5) AND (d6 AND d7))) XOR ((r0 AND r5) AND (r6 AND d7)))
+  Components: Gas=True, Disk=True, Radius=True
+
+============================================================
+MICRO-LAW v2 SUMMARY
+============================================================
+Total time: 499.8s
+
+Bit    Accuracy     vs Superbatch   Stage      Verdict
+-------------------------------------------------------
+Bit 6   80.1%        -3.4%           stage2     ✗ Worse
+Bit 5   71.0%        -8.5%           stage2     ✗ Worse
+Bit 4   70.0%        -4.4%           stage2     ✗ Worse
+
+============================================================
+PHYSICS INTERPRETATION
+============================================================
+
+Bit 6: 80.1%
+  Gas bits used: None
+  Disk bits used: [3, 6, 7]
+  Radius bits used: [3, 5, 7]
+  → Dark matter couples primarily to STARS
+
+Bit 5: 71.0%
+  Gas bits used: None
+  Disk bits used: None
+  Radius bits used: [0, 1, 2, 4, 6, 7]
+
+Bit 4: 70.0%
+  Gas bits used: [6]
+  Disk bits used: [6, 7]
+  Radius bits used: [0, 2, 5, 6]
+  → Dark matter couples to BOTH gas and stars differently!
+(.venv) PS C:\Users\alxth\OneDrive\Documents\GitHub\ude-core> 
