@@ -1,0 +1,17 @@
+{
+  "discovered": {
+    "name": "RAR",
+    "formula": "g_bar / (1 - exp(-sqrt(g_bar/1.20e-10)))",
+    "mae": 0.24745077661605513,
+    "complexity": 2
+  },
+  "linear": {
+    "mae": 0.28883356794061754
+  },
+  "rar_default": {
+    "mae": 0.24745077661605513
+  },
+  "mond_default": {
+    "mae": 0.3056105672998346
+  }
+}

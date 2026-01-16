@@ -1,0 +1,52 @@
+{
+  "bit_results": {
+    "bit0": {
+      "gene": "DT(['vbar_b0', 'vbar_b1', 'r_b1'])",
+      "accuracy": 0.9591111111111111,
+      "fallback": true
+    },
+    "bit1": {
+      "gene": "DT(['vbar_b2', 'vbar_b0', 'r_b2'])",
+      "accuracy": 0.9102222222222223,
+      "fallback": true
+    },
+    "bit2": {
+      "gene": "DT(['r_b2', 'r_b3', 'vbar_b1'])",
+      "accuracy": 0.8503703703703703,
+      "fallback": true
+    },
+    "bit3": {
+      "gene": "DT(['vbar_b4', 'vbar_b2', 'vbar_b0'])",
+      "accuracy": 0.7798518518518519,
+      "fallback": true
+    },
+    "bit4": {
+      "gene": "DT(['r_b7', 'vbar_b6', 'vbar_b5'])",
+      "accuracy": 0.7540740740740741,
+      "fallback": true
+    },
+    "bit5": {
+      "gene": "DT(['r_b6', 'vbar_b5', 'vbar_b3'])",
+      "accuracy": 0.7570370370370371,
+      "fallback": true
+    },
+    "bit6": {
+      "gene": "DT(['r_b3', 'r_b7', 'vbar_b5'])",
+      "accuracy": 0.7401481481481481,
+      "fallback": true
+    },
+    "bit7": {
+      "gene": "DT(['vbar_b4', 'r_b7', 'r_b4'])",
+      "accuracy": 0.725037037037037,
+      "fallback": true
+    }
+  },
+  "formula_type": "MIXED",
+  "four_law_validation": {
+    "benford": 0.9737435160284563,
+    "zipf": 0.7830329555942531,
+    "lln": 0.9918678938120814,
+    "pareto": 0.6478047550957313,
+    "combined": 0.8654092181792667
+  }
+}

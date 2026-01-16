@@ -1,0 +1,24 @@
+{
+  "cubic_comparison": {
+    "cubic": 0.1926034809498466,
+    "gp_discovered": 0.18256008400752677,
+    "linear": 0.1954923057406523,
+    "quadratic": 0.19373139076601265
+  },
+  "rar_comparison": {
+    "rar_fixed": 0.24745077669302248,
+    "rar_fitted": 0.19301507208052415,
+    "gp": 0.18256008400752677,
+    "g_dagger_fit": 4.074514987390909e-11
+  },
+  "monotonicity": {
+    "gp_violations": 20,
+    "rar_violations": 0
+  },
+  "asymptotic": {
+    "gp_slope_low": -0.13401937431664734,
+    "gp_slope_high": 0.96558552458201,
+    "rar_slope_low": 0.502318653915913,
+    "rar_slope_high": 0.9994288453090165
+  }
+}

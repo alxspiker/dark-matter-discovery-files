@@ -1,0 +1,19 @@
+{
+  "selected_model": "MOND_standard",
+  "selected_params": [
+    6.423501418469574e-11
+  ],
+  "validation_mae": 0.16903500365115964,
+  "permutation_control": {
+    "skipped": true
+  },
+  "final_test": {
+    "selected_name": "MOND_standard",
+    "selected_params": [
+      6.423501418469574e-11
+    ],
+    "selected_mae": 0.17797649754741002,
+    "rar_mae": 0.24673784820457884,
+    "linear_mae": 0.31021575972899607
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "discovered_formula": "((1.46 + (x * (x * tanh(-0.00292)))) * (x + 1.46))",
+  "discovered_complexity": 12,
+  "validation_mae": 0.10375247082832795,
+  "discovered_mae": 0.18511335608496537,
+  "rar_mae": 0.24745077669302243,
+  "linear_mae": 0.3322500982886325
+}
