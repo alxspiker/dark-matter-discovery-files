@@ -1,6 +1,6 @@
 # Independent Verification and Comprehensive Analysis of the Gravitational Overflow Hypothesis
 
-## A Data-Driven Investigation into the Digital Nature of Galactic Rotation Curves
+## A Data-Driven Investigation into Nonlinear Relationships in Galactic Rotation Curves
 
 **Date:** January 15, 2026  
 **Dataset:** SPARC (Spitzer Photometry and Accurate Rotation Curves) - 175 Galaxies  
@@ -10,12 +10,12 @@
 
 ## Abstract (Corrected)
 
-This paper presents an independent verification and critical analysis of the "Gravitational Overflow Hypothesis" - a novel framework for explaining the anomalous flat rotation curves of spiral galaxies. Through rigorous statistical analysis of the SPARC galaxy database (143 galaxies with sufficient data points), we find:
+This paper presents an independent verification and critical analysis of the "Gravitational Overflow Hypothesis" - an exploratory hypothesis proposing that a simple composite coordinate organizes rotation-curve behavior in spiral galaxies. Through rigorous statistical analysis of the SPARC galaxy database (143 galaxies with sufficient data points), we find:
 
 **What IS supported:**
-1. Within individual galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits rotation curves well (median R² = 0.97)
+1. Within individual galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits rotation curves well (median R² = 0.97, in-sample)
 2. Sigmoid significantly outperforms linear within galaxies (97.5% of cases, p < 0.0001)
-3. A galaxy-level phase transition effect exists (p < 10⁻²⁷)
+3. A galaxy-level *low-x vs high-x velocity separation* is present (Wilcoxon p ≈ 1.77×10⁻²⁷), consistent with a smooth nonlinear transition
 
 **What is NOT supported:**
 1. The theoretical threshold x = 1.0 is NOT within the 95% CI for transition centers (mean x₀ = 0.895, CI [0.834, 0.959])
@@ -37,15 +37,17 @@ $$V(r) \propto \frac{1}{\sqrt{r}}$$
 
 However, observations consistently reveal that rotation curves remain remarkably flat at large radii, with stars orbiting at constant velocities far exceeding Newtonian predictions. This discrepancy has traditionally been explained by two competing hypotheses:
 
-1. **Dark Matter Theory**: Invisible, non-baryonic matter comprising ~85% of the universe's mass creates an extended halo that maintains gravitational pull at large radii.
+1. **Dark Matter Theory**: Invisible, non-baryonic matter comprising ~85% of total matter creates an extended halo that maintains gravitational pull at large radii.
 
 2. **Modified Newtonian Dynamics (MOND)**: At low accelerations, gravitational physics fundamentally deviates from Newton's law.
 
 ### 1.2 The Gravitational Overflow Hypothesis
 
-This investigation examines a third possibility: that the relationship between mass, radius, and velocity operates according to discrete digital logic rather than continuous physical laws. Specifically, we test the hypothesis that:
+This investigation examines a third possibility proposed by the "Gravitational Overflow Hypothesis": that the relationship between mass, radius, and velocity might operate according to discrete digital logic rather than continuous physical laws. Specifically, we test the claim that:
 
 > When the normalized sum of baryonic velocity and radius exceeds a critical threshold (1.0), the galactic system "latches" into a high-velocity state, creating the flat rotation curve.
+
+**Note:** Subsequent sections evaluate whether the data actually favor such a discrete latch versus a smooth nonlinear transition, and whether x=1.0 is a special threshold.
 
 This can be expressed mathematically as:
 
@@ -72,10 +74,10 @@ $$V_{bar} = \sqrt{V_{gas}^2 + V_{disk}^2 + V_{bul}^2}$$
 
 Our independent verification employed multiple statistical and predictive approaches:
 
-1. **Phase Transition Analysis**: Testing whether the digital sum threshold creates a statistically significant separation in observed velocities
+1. **Velocity Separation Analysis**: Testing whether the threshold creates statistically significant separation in observed velocities
 2. **Predictive Model Comparison**: Comparing RMSE of multiple models (Newtonian, Overflow, Mass-only, Radius-only, MOND)
 3. **Threshold Sweep Analysis**: Finding the optimal threshold value
-4. **Bit-Level Pattern Analysis**: Verifying the digital carry-out correlation
+4. **Cross-Galaxy Generalization**: Testing whether models trained on some galaxies predict held-out galaxies
 
 ### 2.3 Statistical Methods
 
@@ -101,9 +103,9 @@ Analysis of the outer regions (last 5 data points) of each galaxy confirms the f
 
 This confirms that observed velocities systematically exceed Newtonian predictions, demonstrating the robust presence of the "dark matter" anomaly across the sample.
 
-### 3.2 Gravitational Overflow Phase Transition
+### 3.2 Velocity Separation by Threshold Region
 
-The central test of the hypothesis examines whether the digital sum creates a distinct phase transition:
+The central test examines whether the normalized sum creates a distinct separation in observed velocities:
 
 | Region | Count | Mean Norm V_obs | Std Dev |
 |--------|-------|-----------------|---------|
@@ -115,7 +117,7 @@ The central test of the hypothesis examines whether the digital sum creates a di
 - T-test p-value: **9.29 × 10⁻²⁷³**
 - Effect size (Cohen's d): **1.23** (large effect)
 
-This extremely low p-value (effectively zero) confirms that the phase transition is not due to chance - points above the threshold exhibit systematically higher velocities.
+This extremely low p-value confirms that the velocity separation is statistically significant — points above the threshold exhibit systematically higher velocities. However, this does NOT distinguish between a discrete "phase transition" and a smooth nonlinear relationship.
 
 ### 3.3 Threshold Optimization
 
@@ -127,7 +129,7 @@ Sweeping threshold values from 0.5 to 1.5 revealed:
 
 ### 3.4 Predictive Model Comparison
 
-We compared five predictive models across all 171 galaxies:
+We compared five predictive models across all 171 galaxies (note: later sigmoid analysis in Section 3.10 uses 143 galaxies with ≥8 data points for reliable curve fitting):
 
 | Model | Mean RMSE (km/s) | Median RMSE (km/s) | Best Model Count |
 |-------|------------------|---------------------|------------------|
@@ -135,19 +137,23 @@ We compared five predictive models across all 171 galaxies:
 | **Overflow Latch** | **16.86** | **14.43** | **76** |
 | Mass-only Latch | 22.93 | 20.10 | 42 |
 | Radius-only Latch | 20.86 | 16.47 | 42 |
-| MOND-like | 42.30 | 28.34 | 38 |
+| MOND-like heuristic* | 42.30 | 28.34 | 38 |
+
+*Note: "MOND-like heuristic" is a simple acceleration-based scaling, NOT a full RAR/MOND fit with proper interpolating function. This baseline should not be interpreted as a test of MOND itself.
 
 **Key Finding:** The Overflow model outperforms Newtonian predictions in **168/171 galaxies (98.2%)**, achieving a **50.3% reduction** in average prediction error.
 
-### 3.5 Bit-Level Pattern Analysis
+**Model fitting details:** For each model, V_flat (the asymptotic velocity) is estimated per galaxy from the data. The "Overflow Latch" model fits a threshold-based piecewise function; the "Newtonian" baseline uses V_bar directly. All models have at least one fitted parameter per galaxy.
 
-Digitizing velocities to 8-bit representation and comparing with carry-out logic:
+### 3.5 Bit-Level Pattern Analysis (Artifact Investigation)
+
+The original hypothesis proposed "digital" behavior at the bit level. We tested this by digitizing velocities to 8-bit representation and comparing with carry-out logic:
 
 | Bit Position | Description | Carry-Out Match Rate |
 |--------------|-------------|---------------------|
 | Bit 7 (MSB) | Most Significant | **70.2%** |
 
-This correlation significantly exceeds the 50% expected by chance, supporting the digital interpretation of the velocity relationship.
+This correlation exceeds the 50% expected by chance. **However**, subsequent analysis (Section 3.9) showed that smooth curvature fits better than discrete kinks, so this pattern is better explained as an artifact of the smooth nonlinear relationship rather than evidence of "digital" physics. **Conclusion:** The bit-level correlation is not meaningful evidence for discrete physics.
 
 ### 3.6 Model Robustness
 
@@ -162,7 +168,7 @@ The Overflow model's superiority is statistically significant against both basel
 
 ### 3.7 Galaxy-Level Independence Test (Pseudo-Replication Control)
 
-A critical concern in aggregated analyses is pseudo-replication - where pooling thousands of data points from multiple galaxies may create artificial statistical significance due to non-independence. To address this, we conducted a **galaxy-level phase transition test** treating each galaxy as a single independent observation.
+A critical concern in aggregated analyses is pseudo-replication — where pooling thousands of data points from multiple galaxies may create artificial statistical significance due to non-independence. To address this, we conducted a **galaxy-level velocity separation test** treating each galaxy as a single independent observation.
 
 **Methodology:**
 1. For each galaxy, normalize inputs using blind per-galaxy scaling
@@ -181,13 +187,13 @@ A critical concern in aggregated analyses is pseudo-replication - where pooling 
 | **Wilcoxon p-value** | **1.77 × 10⁻²⁷** |
 | **T-Test p-value** | **1.01 × 10⁻⁴⁵** |
 
-**Interpretation:** Even when treating each galaxy as a single independent unit (removing the concern of massive galaxies dominating statistics), the phase transition remains **overwhelmingly significant**. The probability that 160 independent galaxies would all show positive velocity jumps by random chance is approximately **1 in 10²⁶**.
+**Interpretation:** Even when treating each galaxy as a single independent unit (removing the concern of massive galaxies dominating statistics), the velocity separation remains **statistically significant** (Wilcoxon p = 1.77 × 10⁻²⁷). This addresses the pseudo-replication critique — the effect is real at the galaxy population level, not an artifact of pooled statistics.
 
-This definitively addresses the pseudo-replication critique - the effect is real at the galaxy population level, not an artifact of pooled statistics.
+**Important caveat:** This shows that high-x regions have higher velocities than low-x regions, but does NOT establish a discrete "phase transition" — a smooth nonlinear relationship also produces this pattern.
 
-### 3.8 Rigorous Phase Transition Analysis (Breakpoint vs Inner/Outer)
+### 3.8 Rigorous Breakpoint Analysis (Kink vs Smooth Curve)
 
-A deeper critique argues that the "phase transition" may simply reflect that outer regions have higher velocities than inner regions (a smooth monotonic relationship), rather than a true discontinuity/kink at x=1.0. To address this, we conducted five rigorous tests specifically designed to detect a **genuine breakpoint** rather than just "outer > inner."
+A deeper critique argues that the velocity separation may simply reflect that outer regions have higher velocities than inner regions (a smooth monotonic relationship), rather than a true discontinuity/kink at x=1.0. To address this, we conducted five rigorous tests specifically designed to detect a **genuine breakpoint** rather than just "outer > inner."
 
 **Initial Test Results (Mean-Jump Based):**
 
@@ -242,7 +248,7 @@ A key criticism of the initial rigorous tests was that Tests 3-4 measured "outer
 
 The upgraded analysis reveals a more nuanced picture:
 
-- ✅ **A real predictive relationship exists** — piecewise at x=1.0 beats linear, local jump is robust
+- ✅ **A real descriptive relationship exists** — piecewise at x=1.0 beats linear, local jump is robust
 - ✅ **Effect is highly consistent** — 95% of galaxies show positive velocity increase
 - ⚠️ **Optimal threshold is ~1.17, not 1.0** — best breakpoints cluster slightly above the theoretical value
 - ❌ **x=1.0 is NOT uniquely special** — it ranks at the 49th percentile among random breakpoints
@@ -250,15 +256,15 @@ The upgraded analysis reveals a more nuanced picture:
 
 **Revised Conclusion:**
 
-The data strongly supports that there is a **real, predictive relationship** between the normalized baryonic input (V_bar + R) and observed velocity. However, this relationship appears to be **smoothly nonlinear (curved)** rather than a **discrete phase transition (kink)**. The "overflow" threshold of x=1.0 captures this relationship reasonably well but is not a special discontinuity point — a smooth function with similar complexity fits the data better.
+The data strongly supports that there is a **real, descriptive within-galaxy relationship** between the normalized baryonic input (V_bar + R) and observed velocity. However, this relationship appears to be **smoothly nonlinear (curved)** rather than a **discrete phase transition (kink)**. The "overflow" threshold of x=1.0 captures this relationship reasonably well but is not a special discontinuity point — a smooth function with similar complexity fits the data better.
 
 This suggests the "Gravitational Overflow Hypothesis" may be better understood as an **effective approximation** to an underlying smooth acceleration law (similar to MOND's interpolating function) rather than evidence of discrete digital physics.
 
-### 3.11 Final Validation with Robust Statistics (CORRECTED)
+### 3.10 Final Validation with Robust Statistics (CORRECTED)
 
 Addressing reviewer-grade concerns, we conducted final validation with robust inference methods, circularity checks, and **rigorous cross-galaxy generalization testing**.
 
-**Part 1: Within-Galaxy Sigmoid Fits**
+**Part 1: Within-Galaxy Sigmoid Fits (In-Sample Goodness-of-Fit)**
 
 | Metric | Value |
 |--------|-------|
@@ -268,7 +274,9 @@ Addressing reviewer-grade concerns, we conducted final validation with robust in
 | Sigmoid beats linear within-galaxy | **97.5%** (115/118) |
 | Paired t-test (sigmoid vs linear) | **p < 0.0001** |
 
-✅ **SUPPORTED**: Sigmoid fits significantly better than linear within individual galaxies.
+**Note:** These R² values are in-sample goodness-of-fit metrics (all data points used for fitting), not cross-validated predictive accuracy. Within-galaxy cross-validation over radii was not the primary target of this work.
+
+✅ **SUPPORTED**: Sigmoid fits significantly better than linear within individual galaxies (in-sample).
 
 **Part 2: Transition Midpoint x₀ (Corrected Results)**
 
@@ -285,6 +293,8 @@ Addressing reviewer-grade concerns, we conducted final validation with robust in
 ❌ **NOT SUPPORTED**: x = 1.0 is **outside** the 95% CI. The mean transition point is significantly below 1.0.
 
 **Part 3: Cross-Galaxy Generalization (Critical Failure)**
+
+**Definition:** "Scale-adjusted R²" allows a per-galaxy affine transform (y' = αy + β) chosen to best match held-out galaxy levels. This tests whether the *shape* of the universal curve transfers across galaxies, not whether absolute predictions work. It is a "shape transfer" test, not a universal law test.
 
 | Model | Raw R² (held-out) | Scale-adjusted R² | Interpretation |
 |-------|-------------------|-------------------|----------------|
@@ -347,23 +357,22 @@ The comprehensive analysis reveals that the "Gravitational Overflow Hypothesis" 
 
 | Aspect | Dark Matter | Overflow Hypothesis |
 |--------|-------------|---------------------|
-| Predictive Accuracy | High (with fitted halo parameters) | High (with threshold logic) |
-| Free Parameters | Multiple (halo mass, concentration, etc.) | One (threshold value) |
-| Physical Interpretation | Invisible matter | Information saturation |
-| Universality | Requires per-galaxy fitting | Single universal rule |
+| Predictive Accuracy | High (with fitted halo parameters) | High **within** individual galaxies |
+| Free Parameters | Multiple (halo mass, concentration, etc.) | 4 per galaxy (sigmoid parameters) |
+| Physical Interpretation | Invisible matter | Smooth nonlinear transition |
+| Universality | Requires per-galaxy fitting | **Also requires per-galaxy fitting** |
 
-The Overflow model achieves comparable predictive power with fundamentally simpler mechanics.
+**Note**: The Overflow model does NOT achieve universality — it requires per-galaxy parameter fitting just like dark matter halo models.
 
-### 4.3 The Digital Horizon
+### 4.3 On the "Digital" Interpretation (Not Supported)
 
-Our analysis reveals a sharp boundary between deterministic (high bits) and chaotic (low bits) behavior:
+The original hypothesis proposed a "digital horizon" with discrete bit-level behavior. Our analysis found:
 
-- **Bit 7 (MSB)**: 100% accuracy with simple Carry-Out logic in curated samples
-- **Bits 0-6 (LSB)**: Require complex, galaxy-specific formulas ("Spaghetti Logic")
+- ❌ Smooth curvature (quadratic) beats discrete kinks (piecewise) in 61% of galaxies
+- ❌ The 70.2% bit-level correlation is better explained by smooth nonlinearity
+- ❌ No evidence supports discrete "digital" physics over continuous transitions
 
-This "Digital Horizon" suggests that:
-- **Macro-scale physics** (rotation curve plateaus) are governed by simple universal laws
-- **Micro-scale variations** represent measurement noise and local baryonic structure
+The "digital" framing should be abandoned in favor of a continuous smooth transition interpretation.
 
 ### 4.4 Limitations and Caveats
 
@@ -386,7 +395,7 @@ This independent verification **partially confirms but substantially revises** t
 
 1. ✅ **Within-Galaxy Sigmoid Works**: Sigmoid fits individual galaxies well (median R² = 0.97) and significantly beats linear (97.5%, p < 0.0001)
 
-2. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms phase transition effect with p < 10⁻²⁷
+2. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms velocity separation with p < 10⁻²⁷ (but this is consistent with smooth nonlinearity, not necessarily a discrete transition)
 
 3. ❌ **x=1.0 NOT Within 95% CI**: Mean x₀ = 0.895, **95% CI [0.834, 0.959] does NOT contain 1.0**; T-test p = 0.002 (SIGNIFICANT)
 
@@ -407,10 +416,10 @@ This independent verification **partially confirms but substantially revises** t
 The complete analysis with rigorous cross-validation definitively establishes:
 
 **What IS supported:**
-- ✅ Within-galaxy sigmoid fits work well (median R² = 0.97, beats linear in 97.5%)
-- ✅ A real nonlinear relationship exists between V̂_bar + R̂ and V_obs
+- ✅ Within-galaxy sigmoid fits work well (median R² = 0.97 in-sample, beats linear in 97.5%)
+- ✅ A real descriptive within-galaxy relationship exists between V̂_bar + R̂ and V_obs
 - ✅ The "overflow" approximation has practical utility for individual galaxies
-- ✅ Galaxy-level phase transition is robust (p < 10⁻²⁷)
+- ✅ Galaxy-level velocity separation is robust (p < 10⁻²⁷, consistent with smooth nonlinearity)
 
 **What is NOT supported:**
 - ❌ **x = 1.0 is NOT the transition center** — mean x₀ = 0.895, 95% CI [0.834, 0.959] excludes 1.0
@@ -448,8 +457,8 @@ The Gravitational Overflow Hypothesis is a **useful per-galaxy approximation** t
 | Galaxies Analyzed | 143 (with ≥8 data points) |
 | Total Data Points | ~3,375 |
 | Velocity Separation p-value (per-galaxy) | 1.77 × 10⁻²⁷ |
-| **Within-Galaxy Sigmoid Median R²** | **0.976** |
-| **Within-Galaxy Sigmoid Mean R²** | **0.863** |
+| **Within-Galaxy Sigmoid Median R²** | **0.976** (in-sample) |
+| **Within-Galaxy Sigmoid Mean R²** | **0.863** (in-sample) |
 | Sigmoid beats Linear (within-galaxy) | **97.5%** (115/118) |
 | **Mean Transition Center (x₀)** | **0.895** |
 | **Median x₀** | **0.873** |
@@ -471,7 +480,7 @@ The Gravitational Overflow Hypothesis is a **useful per-galaxy approximation** t
 | File | Description |
 |------|-------------|
 | `figure1_rotation_curves.png` | Example rotation curves showing the anomaly |
-| `figure2_overflow_detection.png` | Phase transition visualization |
+| `figure2_overflow_detection.png` | Velocity separation visualization |
 | `figure3_model_comparison.png` | Predictive model comparison |
 | `figure4_digital_horizon.png` | Bit-level accuracy analysis |
 | `galaxy_phase_hist.png` | Per-galaxy velocity jump distribution |
