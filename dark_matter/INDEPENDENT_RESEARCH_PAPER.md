@@ -8,16 +8,22 @@
 
 ---
 
-## Abstract
+## Abstract (Corrected)
 
-This paper presents an independent verification and comprehensive analysis of the "Gravitational Overflow Hypothesis" - a novel framework for explaining the anomalous flat rotation curves of spiral galaxies without invoking dark matter. Through rigorous statistical analysis of the SPARC galaxy database (171 galaxies, 3,375 data points), we confirm that the relationship between baryonic matter distribution and observed rotational velocities exhibits behavior consistent with a digital saturation mechanism. Our analysis demonstrates that:
+This paper presents an independent verification and critical analysis of the "Gravitational Overflow Hypothesis" - a novel framework for explaining the anomalous flat rotation curves of spiral galaxies. Through rigorous statistical analysis of the SPARC galaxy database (143 galaxies with sufficient data points), we find:
 
-1. The "overflow" model (where normalized baryonic velocity + normalized radius ≥ 1.0) produces a statistically significant phase transition in observed velocities (p < 10⁻²⁷⁰)
-2. The predictive model based on this overflow logic outperforms pure Newtonian dynamics in 98.2% of tested galaxies
-3. The mean RMSE improves from 33.96 km/s (Newtonian) to 16.86 km/s (Overflow model), representing a 50.3% reduction in prediction error
-4. The Most Significant Bit (MSB) of digitized observed velocities shows 70.2% correlation with the carry-out signal from adding baryonic velocity and radius
+**What IS supported:**
+1. Within individual galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits rotation curves well (median R² = 0.97)
+2. Sigmoid significantly outperforms linear within galaxies (97.5% of cases, p < 0.0001)
+3. A galaxy-level phase transition effect exists (p < 10⁻²⁷)
 
-These findings support the hypothesis that galactic gravity may operate according to a discrete saturation logic rather than continuous Newtonian decay, providing a novel mathematical framework for understanding the "dark matter" phenomenon.
+**What is NOT supported:**
+1. The theoretical threshold x = 1.0 is NOT within the 95% CI for transition centers (mean x₀ = 0.895, CI [0.834, 0.959])
+2. A single "universal sigmoid" does NOT generalize across galaxies — held-out galaxy R² = -35 (raw), and even with scale-adjustment, linear marginally outperforms sigmoid
+3. The "digital" interpretation is not supported — smooth curvature (quadratic) beats discrete kinks (piecewise) in 61% of galaxies
+4. Flatness correlation (r = 0.37) has no out-of-sample predictive power (CV R² ≈ 0)
+
+**Honest conclusion:** The Gravitational Overflow model is a **useful per-galaxy approximation** that captures real nonlinear behavior in rotation curves, but it is NOT a universal law. Sigmoid parameters vary substantially across galaxies, and no single function f(x) predicts unseen galaxies better than a simple linear model.
 
 ---
 
@@ -298,23 +304,23 @@ Flatness explains ~25% of x₀ variance on held-out galaxies — genuine predict
 
 ## 4. Discussion
 
-### 4.1 Physical Interpretation (Revised)
+### 4.1 Physical Interpretation (Corrected)
 
-The comprehensive analysis reveals a more nuanced picture than the original "digital saturation" interpretation. While the Gravitational Overflow model achieves excellent predictive power, the underlying physical relationship appears to be a **smooth continuous transition** rather than a discrete digital phenomenon.
+The comprehensive analysis reveals that the "Gravitational Overflow Hypothesis" captures a real phenomenon **within individual galaxies** but does **not constitute a universal law** applicable across galaxies.
 
 **What the data actually shows:**
-- A strong nonlinear relationship between x = V̂_bar + R̂ and V_obs
-- A transition band from ~0.74 to ~1.08 (IQR of per-galaxy sigmoid centers)
-- Mean transition center x₀ = 0.96, with **x=1.0 within the 95% CI**
-- Smooth sigmoid fits (R² = 0.93) describe the data well
-- One robust galaxy property correlation: flatness (r = 0.66, CV R² = 0.25)
+- ✅ Within-galaxy sigmoid fits work well (median R² = 0.97)
+- ✅ Sigmoid significantly beats linear within galaxies (97.5%, p < 0.0001)
+- ❌ Mean transition center x₀ = 0.895, 95% CI [0.834, 0.959] — **x=1.0 is outside the CI**
+- ❌ Universal sigmoid does NOT generalize across galaxies (R² = -35, linear is marginally better even after scale adjustment)
+- ⚠️ Flatness correlates with x₀ (r = 0.37) but has no predictive power (CV R² ≈ 0)
 
-**Revised interpretation:**
-The "overflow" model captures a real smooth transition in the data:
-- The transition center is **consistent with x=1.0** (within 95% CI)
-- The relationship is continuous, not discrete
-- Flatness genuinely predicts transition location (25% variance explained)
-- The model may be capturing the same physics as MOND's interpolating function
+**Honest interpretation:**
+- Each galaxy has its own sigmoid-like transition behavior
+- The transition center (x₀) varies significantly across galaxies (mean = 0.89, std = 0.32)
+- The theoretical threshold of x = 1.0 is NOT a special point — it's outside the 95% CI
+- No single universal curve predicts unseen galaxies better than a simple linear model
+- The model may be capturing per-galaxy modified gravity effects that vary with galaxy properties
 
 ### 4.2 Comparison with Traditional Dark Matter Models
 
@@ -355,55 +361,54 @@ This "Digital Horizon" suggests that:
 
 This independent verification confirms the key claims of the Gravitational Overflow Hypothesis:
 
-### 5.1 Primary Findings
+### 5.1 Primary Findings (Corrected)
 
-1. ✅ **Predictive Relationship Confirmed**: The normalized baryonic input creates a highly significant (p < 10⁻²⁷⁰) separation in observed velocities
+1. ✅ **Within-Galaxy Sigmoid Works**: Sigmoid fits individual galaxies well (median R² = 0.97) and significantly beats linear (97.5%, p < 0.0001)
 
-2. ✅ **Superior Predictive Power**: The Overflow model reduces prediction error by 50.3% compared to Newtonian dynamics
+2. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms phase transition effect with p < 10⁻²⁷
 
-3. ✅ **Universal Applicability**: The model outperforms in 98.2% of tested galaxies without per-galaxy fitting
+3. ❌ **x=1.0 NOT Within 95% CI**: Mean x₀ = 0.895, **95% CI [0.834, 0.959] does NOT contain 1.0**; T-test p = 0.002 (SIGNIFICANT)
 
-4. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms effect with p < 10⁻²⁷, definitively addressing pseudo-replication concerns
+4. ❌ **Universal Sigmoid Does NOT Generalize**: Raw out-of-galaxy R² = -35; even scale-adjusted, linear marginally beats sigmoid (0.685 vs 0.677)
 
-5. ✅ **Transition Band Contains x=1.0**: Sigmoid transition centers have IQR [0.74, 1.08]; **x=1.0 is within this band**
+5. ❌ **Sigmoid Shape Not Better Than Linear**: When predicting held-out galaxies (with scale adjustment), sigmoid wins only 40% of the time
 
-6. ✅ **x=1.0 Within 95% CI**: Mean x₀ = 0.961, **95% CI [0.897, 1.032] contains 1.0**; T-test p = 0.28 (NOT significant)
+6. ⚠️ **High Parameter Heterogeneity**: Sigmoid parameters vary substantially across galaxies (x₀ CV = 0.35, s CV = 1.66, a CV = 3.35)
 
-7. ⚠️ **Smooth Transition, Not Discrete Kink**: Sigmoid fits (R² = 0.93) describe the data as a continuous transition
+7. ⚠️ **Flatness Correlation Weak**: Pearson r = 0.37 is significant (p < 0.001), but cross-validated R² ≈ 0 (no predictive power)
 
-8. ⚠️ **Digital Interpretation Uncertain**: The relationship is smooth; whether this reflects discrete or continuous physics remains open
+8. ⚠️ **Smooth Transition, Not Discrete Kink**: Quadratic beats piecewise in 61% of galaxies — no evidence for discrete physics
 
-9. ✅ **One Robust Property Correlation**: Flatness (r = 0.66, Spearman ρ = 0.28) survives FDR correction and cross-validation (CV R² = 0.25)
+9. ✅ **Practical Utility Within Galaxies**: The "overflow" approximation works well for individual galaxies, even if not a universal law
 
-### 5.2 Revised Implications (Final)
+### 5.2 Corrected Implications (Final)
 
-The complete analysis with robust statistics definitively establishes:
+The complete analysis with rigorous cross-validation definitively establishes:
 
 **What IS supported:**
-- A strong, predictive nonlinear relationship between V̂_bar + R̂ and V_obs
-- A characteristic transition band from x ≈ 0.74 to x ≈ 1.08 (IQR)
-- **x=1.0 lies WITHIN the 95% CI** for mean transition center
-- The practical utility of the "overflow" model for rotation curve prediction
-- One robust covariate: flatness predicts x₀ with CV R² = 0.25
-- A connection to existing modified gravity theories (MOND-like interpolation)
+- ✅ Within-galaxy sigmoid fits work well (median R² = 0.97, beats linear in 97.5%)
+- ✅ A real nonlinear relationship exists between V̂_bar + R̂ and V_obs
+- ✅ The "overflow" approximation has practical utility for individual galaxies
+- ✅ Galaxy-level phase transition is robust (p < 10⁻²⁷)
 
 **What is NOT supported:**
-- A discrete "digital" phase transition (smooth sigmoid fits better)
-- Multiple galaxy property correlations (only "flatness" survives FDR + cross-validation)
+- ❌ **x = 1.0 is NOT the transition center** — mean x₀ = 0.895, 95% CI [0.834, 0.959] excludes 1.0
+- ❌ **Universal sigmoid does NOT generalize** — held-out galaxy R² is -35 (raw) or 0.68 (scale-adjusted), linear is marginally better
+- ❌ **No single f(x) works across galaxies** — parameters vary too much (especially asymptotes)
+- ❌ **Flatness has no predictive power** — r = 0.37 is significant, but CV R² ≈ 0
+- ❌ **Discrete "digital" physics** — quadratic beats piecewise in 61% of galaxies
 
-**What remains uncertain:**
-- Whether the smooth transition reflects discrete underlying physics or continuous modified gravity
-- The physical interpretation of the flatness-x₀ correlation
+**Honest scientific framing:**
 
-**Publication-ready scientific framing:**
+> *"Within individual SPARC galaxies, normalized observed velocity follows a sigmoid-like function of x = V̂_bar + R̂ (median R² = 0.97). However, sigmoid parameters vary substantially across galaxies (x₀ mean = 0.89 ± 0.32), and a single universal sigmoid does NOT generalize to held-out galaxies better than a simple linear model. The 'overflow' threshold of x = 1.0 is outside the 95% CI for the mean transition point."*
 
-> *"In SPARC rotation curves, normalized observed velocity is well-described by a sigmoid-like function of x = V̂_bar + R̂, with a transition band spanning ~0.74-1.08 (IQR) and galaxy-to-galaxy variation (SD ~0.28). The value x=1.0 lies within this band (95% CI contains 1.0). The earlier piecewise 'overflow' model works because it approximates this smooth transition."*
+**What the model actually is:**
 
-**Recommended reformulation:**
-
-$$V_{obs}(x) = a + \frac{b-a}{1 + e^{-s(x-x_0)}} \quad \text{(smooth sigmoid)}$$
-
-The "Gravitational Overflow Hypothesis" should be understood as an **effective approximation** that captures a real physical relationship.
+The Gravitational Overflow Hypothesis is a **useful per-galaxy approximation** that captures real nonlinear behavior, but:
+- It is NOT a universal law
+- x = 1.0 is NOT a special threshold
+- Parameters must be fit per-galaxy
+- It may be a reparameterization of MOND-like physics
 
 ### 5.3 Future Directions
 
@@ -415,29 +420,28 @@ The "Gravitational Overflow Hypothesis" should be understood as an **effective a
 
 ---
 
-## 6. Summary Statistics
+## 6. Summary Statistics (Corrected)
 
 | Metric | Value |
 |--------|-------|
-| Galaxies Analyzed | 171 |
-| Total Data Points | 3,375 |
-| Velocity Separation p-value (pooled) | 9.29 × 10⁻²⁷³ |
+| Galaxies Analyzed | 143 (with ≥8 data points) |
+| Total Data Points | ~3,375 |
 | Velocity Separation p-value (per-galaxy) | 1.77 × 10⁻²⁷ |
-| Galaxies Showing Positive Jump | 160/160 (100%) |
-| Mean RMSE Improvement | 50.3% |
-| Galaxies where Overflow wins | 98.2% |
-| Piecewise @ x=1.0 beats Linear | 75.8% |
-| **Sigmoid Fit Mean R²** | **0.927** |
-| **Mean Transition Center (x₀)** | **0.961** |
-| **95% CI for Mean x₀** | **[0.897, 1.032]** |
-| **T-test (mean = 1.0)** | **p = 0.28** (NOT sig.) |
-| **Wilcoxon (median = 1.0)** | **p = 0.07** (NOT sig.) |
-| **Cohen's d** | **0.14** (very small) |
-| **Transition Band (IQR)** | **[0.74, 1.08]** |
-| **x=1.0 within 95% CI?** | **✅ YES** |
-| **Flatness Correlation (Pearson)** | **r = 0.66** |
-| **Flatness Correlation (Spearman)** | **ρ = 0.28** |
-| **Flatness Cross-Val R²** | **0.25** |
+| **Within-Galaxy Sigmoid Median R²** | **0.976** |
+| **Within-Galaxy Sigmoid Mean R²** | **0.863** |
+| Sigmoid beats Linear (within-galaxy) | **97.5%** (115/118) |
+| **Mean Transition Center (x₀)** | **0.895** |
+| **Median x₀** | **0.873** |
+| **Std Dev x₀** | **0.319** |
+| **95% CI for Mean x₀** | **[0.834, 0.959]** |
+| **x = 1.0 within 95% CI?** | **❌ NO** |
+| **T-test (mean = 1.0)** | **p = 0.002** (SIGNIFICANT) |
+| **Universal Sigmoid R² (held-out, raw)** | **-35.1** |
+| **Universal Sigmoid R² (scale-adjusted)** | **0.677** |
+| **Universal Linear R² (scale-adjusted)** | **0.685** |
+| **Sigmoid beats Linear (cross-galaxy)** | **40%** (47/118) |
+| Flatness Correlation (Pearson r) | 0.372 (p < 0.001) |
+| Flatness Cross-Val R² | **-0.046** (no predictive power) |
 
 ---
 
@@ -462,7 +466,8 @@ The "Gravitational Overflow Hypothesis" should be understood as an **effective a
 | `phase_transition_upgraded_test.py` | Upgraded ΔAIC controls + kink vs curvature |
 | `smooth_transition_analysis.py` | Initial smooth transition analysis |
 | `improved_smooth_analysis.py` | FDR-corrected sigmoid analysis |
-| `final_validation.py` | **Robust stats + cross-validation (FINAL)** |
+| `final_validation.py` | Robust stats + cross-validation |
+| `final_honest_validation.py` | **CORRECTED: Cross-galaxy generalization test (FINAL)** |
 
 ---
 
@@ -482,7 +487,8 @@ python phase_transition_rigorous_test.py  # Rigorous breakpoint analysis
 python phase_transition_upgraded_test.py  # Upgraded ΔAIC + kink vs curvature
 python smooth_transition_analysis.py  # Initial smooth model analysis
 python improved_smooth_analysis.py  # FDR-corrected sigmoid analysis
-python final_validation.py  # Robust stats + cross-validation (FINAL)
+python final_validation.py  # Initial robust stats
+python final_honest_validation.py  # CORRECTED: Cross-galaxy generalization (FINAL)
 ```
 
 ---
