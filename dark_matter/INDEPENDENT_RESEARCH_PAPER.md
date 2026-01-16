@@ -254,51 +254,72 @@ The data strongly supports that there is a **real, predictive relationship** bet
 
 This suggests the "Gravitational Overflow Hypothesis" may be better understood as an **effective approximation** to an underlying smooth acceleration law (similar to MOND's interpolating function) rather than evidence of discrete digital physics.
 
-### 3.11 Final Validation with Robust Statistics
+### 3.11 Final Validation with Robust Statistics (CORRECTED)
 
-Addressing reviewer-grade concerns, we conducted final validation with robust inference methods, circularity checks, and cross-validation.
+Addressing reviewer-grade concerns, we conducted final validation with robust inference methods, circularity checks, and **rigorous cross-galaxy generalization testing**.
 
-**Part 1: Explaining the x₀ Tension**
+**Part 1: Within-Galaxy Sigmoid Fits**
 
-The per-galaxy mean x₀ differs from the pooled fit x₀ for valid statistical reasons:
+| Metric | Value |
+|--------|-------|
+| Galaxies with successful sigmoid fits | 118/143 |
+| Mean sigmoid R² | 0.863 |
+| Median sigmoid R² | **0.976** |
+| Sigmoid beats linear within-galaxy | **97.5%** (115/118) |
+| Paired t-test (sigmoid vs linear) | **p < 0.0001** |
 
-| Estimand | Value | Explanation |
-|----------|-------|-------------|
-| Per-galaxy mean x₀ | 0.961 | Average of individual galaxy transition centers |
-| Pooled sigmoid x₀ | 1.06 | Transition center of the "average curve" |
-| Point-weighted mean | 0.914 | Point-rich galaxies have lower x₀ (r = -0.24) |
+✅ **SUPPORTED**: Sigmoid fits significantly better than linear within individual galaxies.
 
-These are **different quantities**: pooling fits the average curve, not the average parameter.
-
-**Part 2: Robust Inference for x₀**
+**Part 2: Transition Midpoint x₀ (Corrected Results)**
 
 | Test | Statistic | P-value | Interpretation |
 |------|-----------|---------|----------------|
-| T-test (mean = 1.0) | t = -1.10 | **0.276** | NOT significant |
-| Wilcoxon (median = 1.0) | W = 697 | **0.074** | NOT significant |
-| Bootstrap 95% CI (mean) | - | **[0.897, 1.032]** | **Contains 1.0** ✓ |
-| Bootstrap 95% CI (median) | - | **[0.859, 1.005]** | **Contains 1.0** ✓ |
-| Cohen's d | 0.142 | - | Very small effect |
+| Mean x₀ | **0.895** | - | Below 1.0 |
+| Median x₀ | **0.873** | - | Below 1.0 |
+| Std Dev | 0.319 | - | High variability |
+| IQR | [0.684, 1.056] | - | Wide range |
+| T-test (mean = 1.0) | t = -3.24 | **0.002** | **SIGNIFICANT** |
+| Wilcoxon (median = 1.0) | - | **< 0.001** | **SIGNIFICANT** |
+| Bootstrap 95% CI | **[0.834, 0.959]** | - | **Does NOT contain 1.0** |
 
-**Critical finding**: With robust statistics, **x=1.0 is NOT significantly different from the mean x₀**. The 95% confidence interval **contains 1.0**.
+❌ **NOT SUPPORTED**: x = 1.0 is **outside** the 95% CI. The mean transition point is significantly below 1.0.
 
-**Part 3: Flatness Correlation - Circularity Check**
+**Part 3: Cross-Galaxy Generalization (Critical Failure)**
 
-The flatness correlation is **NOT mechanically circular**:
-- Flatness: computed from RAW V_obs, outer 5 points only
-- x₀: fit to NORMALIZED data, full radial range
+| Model | Raw R² (held-out) | Scale-adjusted R² | Interpretation |
+|-------|-------------------|-------------------|----------------|
+| Universal sigmoid | **-35.1** | **0.677** | Terrible raw, decent shape |
+| Universal linear | **-34.9** | **0.685** | Marginally better than sigmoid |
+| Sigmoid wins (raw) | 50/118 (42%) | - | Worse than coin flip |
+| Sigmoid wins (adjusted) | 47/118 (40%) | - | Linear is better |
 
-| Correlation | Value | P-value |
-|-------------|-------|---------|
-| Pearson r | **0.66** | 7.4×10⁻⁹ |
-| Spearman ρ | **0.28** | 0.029 |
-| Cross-val R² | **0.25** | - |
+❌ **NOT SUPPORTED**: A single universal sigmoid does NOT generalize across galaxies. Even with scale-adjustment (allowing per-galaxy shift/scale), linear performs marginally better (R² = 0.685 vs 0.677).
 
-Flatness explains ~25% of x₀ variance on held-out galaxies — genuine predictive power.
+**Part 4: Why Universal Sigmoid Fails — Parameter Heterogeneity**
 
-**Final Defensible Claim:**
+| Parameter | Mean | Std Dev | CV (std/mean) |
+|-----------|------|---------|---------------|
+| a (lower asymptote) | 0.13 | 0.44 | **3.35** |
+| b (upper asymptote) | 1.35 | 0.47 | 0.35 |
+| x₀ (transition center) | 0.90 | 0.31 | **0.35** |
+| s (steepness) | 16.5 | 27.4 | **1.66** |
 
-> *In SPARC rotation curves, normalized observed velocity is well-described by a sigmoid-like function of x = V̂_bar + R̂, with a transition band spanning ~0.74-1.08 (IQR). The value x=1.0 lies within this band (95% CI contains 1.0). The "overflow" model works because it approximates this smooth transition.*
+High coefficient of variation in a, x₀, and s explains why a single universal sigmoid fails.
+
+**Part 5: Flatness Correlation — Correlational, Not Predictive**
+
+| Test | Value | Interpretation |
+|------|-------|----------------|
+| Pearson r | **0.372** | Modest correlation |
+| Spearman ρ | **0.208** | Weaker monotonic relationship |
+| P-values | < 0.05 | Both significant |
+| Cross-val R² | **-0.046** | No predictive power on held-out data |
+
+⚠️ **CORRELATIONAL ONLY**: Flatness correlates with x₀ (p < 0.05), but has **no out-of-sample predictive power** (CV R² ≈ 0). This is association, not prediction.
+
+**Corrected Final Claim:**
+
+> *"Within individual SPARC galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits the rotation curve well (median R² = 0.97). However, a single universal sigmoid does NOT generalize across galaxies — parameters vary too much (especially asymptotes). The mean transition center x₀ = 0.895 with 95% CI [0.834, 0.959] excludes 1.0. The 'overflow' model is a useful within-galaxy approximation, not a universal law."*
 
 ---
 
@@ -348,18 +369,18 @@ This "Digital Horizon" suggests that:
 
 1. **Correlation vs Causation**: Statistical correlation does not establish physical mechanism
 2. **Sample Selection**: Results depend on SPARC sample characteristics
-3. **Threshold Fitting**: Optimal threshold identification involves some fitting
-4. **Physical Mechanism**: No proposed physical process for digital behavior
-5. **Discrete vs Continuous**: The "digital" interpretation is NOT supported — smooth sigmoid models fit better (R² = 0.93)
-6. **Galaxy-Dependent Transitions**: Transition points vary across galaxies (IQR: 0.74-1.08), but most variation is NOT explained by observable properties (only "flatness" survives FDR correction)
-7. **Multiple Comparison Corrections**: Initial claims of 5 significant property correlations were false positives — proper FDR correction leaves only 1
+3. **No Universal Law**: A single universal sigmoid does NOT generalize across galaxies — held-out R² is -35 (raw), linear marginally better even with scale-adjustment
+4. **x = 1.0 Not Special**: The theoretical threshold of 1.0 is outside the 95% CI for mean x₀ (0.895, CI [0.834, 0.959])
+5. **Discrete vs Continuous**: The "digital" interpretation is NOT supported — smooth curvature beats discrete kinks in 61% of galaxies
+6. **Galaxy-Dependent Transitions**: Sigmoid parameters vary substantially (x₀ CV = 0.35, s CV = 1.66, a CV = 3.35)
+7. **Flatness Not Predictive**: Flatness correlation (r = 0.37) is significant but has no out-of-sample predictive power (CV R² ≈ 0)
 8. **Mathematical Equivalence**: The overflow model may be mathematically equivalent to existing modified gravity theories (MOND) in a different parameterization
 
 ---
 
 ## 5. Conclusions
 
-This independent verification confirms the key claims of the Gravitational Overflow Hypothesis:
+This independent verification **partially confirms but substantially revises** the Gravitational Overflow Hypothesis:
 
 ### 5.1 Primary Findings (Corrected)
 
