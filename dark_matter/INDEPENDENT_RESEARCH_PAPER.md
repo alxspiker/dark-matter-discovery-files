@@ -258,12 +258,17 @@ The comprehensive analysis reveals a more nuanced picture than the original "dig
 
 **What the data actually shows:**
 - A strong nonlinear relationship between x = V̂_bar + R̂ and V_obs
-- A transition region (not point) centered near x ≈ 1.0-1.2
-- Smooth curvature (quadratic) fits better than discrete kinks (piecewise)
-- Transition characteristics vary systematically with galaxy properties
+- A transition band from ~0.74 to ~1.08 (IQR of per-galaxy sigmoid centers)
+- Mean transition center x₀ = 0.94, significantly below 1.0
+- Smooth sigmoid fits (R² = 0.93) outperform discrete models
+- Only one galaxy property correlation survives FDR correction (flatness)
 
 **Revised interpretation:**
-The "overflow" model may be capturing the same physics as MOND's interpolating function in a different mathematical form. The success of the model comes from approximating a smooth acceleration relation with a simple threshold rule, not from underlying digital physics.
+The "overflow" model captures a real smooth transition in the data, but:
+- The transition is NOT centered at x=1.0 (mean = 0.94)
+- The relationship is continuous, not discrete
+- Galaxy-to-galaxy variation exists but is largely not explained by observable properties
+- The model may be capturing the same physics as MOND's interpolating function
 
 ### 4.2 Comparison with Traditional Dark Matter Models
 
@@ -293,12 +298,10 @@ This "Digital Horizon" suggests that:
 2. **Sample Selection**: Results depend on SPARC sample characteristics
 3. **Threshold Fitting**: Optimal threshold identification involves some fitting
 4. **Physical Mechanism**: No proposed physical process for digital behavior
-5. **Discrete vs Continuous**: The "digital" interpretation is NOT supported — smooth models fit better
-6. **Galaxy-Dependent Transitions**: The transition point varies systematically with galaxy properties, suggesting an underlying continuous physical law rather than a universal discrete threshold
-7. **Mathematical Equivalence**: The overflow model may be mathematically equivalent to existing modified gravity theories (MOND) in a different parameterization
-5. **Discrete vs Continuous**: The "digital" interpretation is NOT supported — smooth models fit better
-6. **Galaxy-Dependent Transitions**: The transition point varies systematically with galaxy properties, suggesting an underlying continuous physical law rather than a universal discrete threshold
-7. **Mathematical Equivalence**: The overflow model may be mathematically equivalent to existing modified gravity theories (MOND) in a different parameterization
+5. **Discrete vs Continuous**: The "digital" interpretation is NOT supported — smooth sigmoid models fit better (R² = 0.93)
+6. **Galaxy-Dependent Transitions**: Transition points vary across galaxies (IQR: 0.74-1.08), but most variation is NOT explained by observable properties (only "flatness" survives FDR correction)
+7. **Multiple Comparison Corrections**: Initial claims of 5 significant property correlations were false positives — proper FDR correction leaves only 1
+8. **Mathematical Equivalence**: The overflow model may be mathematically equivalent to existing modified gravity theories (MOND) in a different parameterization
 
 ---
 
@@ -316,30 +319,36 @@ This independent verification confirms the key claims of the Gravitational Overf
 
 4. ✅ **Galaxy-Level Independence Confirmed**: Per-galaxy analysis (N=160) confirms effect with p < 10⁻²⁷, definitively addressing pseudo-replication concerns
 
-5. ✅ **Transition Region Centered Near x ≈ 1.0**: Smooth model inflection points cluster at x = 1.15 ± 0.36, confirming the threshold captures real physics
+5. ✅ **Transition Band Contains x=1.0**: Sigmoid transition centers have IQR [0.74, 1.08]; x=1.0 is within this band
 
-6. ⚠️ **Threshold x=1.0 Not Uniquely Special**: x=1.0 ranks at 49th percentile among random breakpoints; optimal breakpoints cluster at x≈1.17
+6. ❌ **x=1.0 is NOT the Center**: Mean sigmoid transition center x₀ = 0.943, significantly BELOW 1.0 (p = 0.033)
 
-7. ❌ **Smooth Curvature Outperforms Discrete Kink**: Quadratic fits (3 params) beat piecewise fits (3 params) in 61.2% of galaxies
+7. ❌ **Smooth Curvature Outperforms Discrete Kink**: Sigmoid fits (R² = 0.93) describe the data better than discrete thresholds
 
-8. ❌ **Digital Interpretation Not Supported**: MSB correlation (70.2%) is better explained by a smooth nonlinear relationship than discrete digital physics
+8. ❌ **Digital Interpretation Not Supported**: The relationship is smooth and continuous, not discrete
 
-9. ✅ **Breakpoint-Galaxy Correlations Found**: Optimal breakpoints correlate significantly with 5 galaxy properties (r_max, v_max, v_flat, curve_slope, central_density), indicating the transition is galaxy-dependent
+9. ⚠️ **Only One Property Correlation Survives FDR**: Of 9 tested correlations, only "flatness" (r = +0.48) survives Benjamini-Hochberg correction; previous correlations were false positives
 
 ### 5.2 Revised Implications (Final)
 
-The complete analysis definitively establishes:
+The complete analysis with proper statistical corrections definitively establishes:
 
 **What IS supported:**
 - A strong, predictive nonlinear relationship between V̂_bar + R̂ and V_obs
-- A characteristic transition scale near x ≈ 1.0-1.2 (with galaxy-dependent variation)
+- A characteristic transition band from x ≈ 0.74 to x ≈ 1.08 (IQR)
+- x=1.0 lies WITHIN the transition band (but is not its center)
 - The practical utility of the "overflow" model for rotation curve prediction
 - A connection to existing modified gravity theories (MOND-like interpolation)
 
 **What is NOT supported:**
 - A discrete "digital" phase transition at any universal threshold
-- The x=1.0 threshold as fundamentally special
+- x=1.0 as the CENTER of the transition (mean = 0.94, significantly below)
 - The "information saturation" interpretation requiring discrete physics
+- Multiple galaxy property correlations (only "flatness" survives FDR correction)
+
+**Correct scientific framing:**
+
+> *"A smooth transition occurs in a band around x ≈ 0.7-1.1, with galaxy-to-galaxy variation. The 'overflow' model is an effective approximation to this continuous relationship."*
 
 **Recommended reformulation:**
 
@@ -347,7 +356,7 @@ Instead of:
 $$V_{obs} = V_{flat} \quad \text{if } x \geq 1.0 \quad \text{(discrete)}$$
 
 Use:
-$$V_{obs} = f(x) \quad \text{where } f \text{ is a smooth sigmoidal function}$$
+$$V_{obs}(x) = a + \frac{b-a}{1 + e^{-s(x-x_0)}} \quad \text{(smooth sigmoid)}$$
 
 The "Gravitational Overflow Hypothesis" should be understood as an **effective approximation** that captures a real physical relationship, but the underlying physics appears to be **continuous modified gravity** rather than **discrete digital computation**.
 
@@ -376,14 +385,13 @@ The "Gravitational Overflow Hypothesis" should be understood as an **effective a
 | Galaxies where Overflow wins | 98.2% |
 | Piecewise @ x=1.0 beats Linear | 75.8% |
 | Local Jump Positive (±0.15 band) | 93.7% |
-| **x=1.0 Percentile Rank (ΔAIC)** | **49%** (not special) |
-| **Optimal Breakpoint Mean** | **x = 1.17** |
-| **Quadratic beats Piecewise** | **61.2%** |
-| Upgraded Tests Passed | 3.5/6 |
-| **Smooth Model Inflection (mean)** | **x = 1.15 ± 0.36** |
-| **Pooled Cubic Inflection** | **x = 0.92** |
-| **Significant Galaxy Correlations** | **5** (r_max, v_max, v_flat, slope, density) |
-| **Cubic Fit Mean R²** | **0.866** |
+| **Sigmoid Fit Mean R²** | **0.927** |
+| **Mean Transition Center (x₀)** | **0.943** (sig. below 1.0) |
+| **Transition Band (IQR)** | **[0.74, 1.08]** |
+| **Galaxy-Weighted Pooled x₀** | **1.06** |
+| **Correlations Surviving FDR** | **1** (flatness only) |
+| x=1.0 within IQR | ✅ Yes |
+| x=1.0 is center | ❌ No (mean = 0.94) |
 
 ---
 
@@ -398,13 +406,15 @@ The "Gravitational Overflow Hypothesis" should be understood as an **effective a
 | `galaxy_phase_hist.png` | Per-galaxy velocity jump distribution |
 | `phase_transition_rigorous.png` | Rigorous breakpoint analysis (5 tests) |
 | `phase_transition_upgraded.png` | Upgraded ΔAIC-based analysis (6 tests) |
-| `smooth_transition_analysis.png` | Smooth model + galaxy correlation analysis |
+| `smooth_transition_analysis.png` | Initial smooth model analysis |
+| `improved_smooth_analysis.png` | Statistically rigorous sigmoid analysis |
 | `independent_analysis.py` | Python script for independent verification |
 | `comprehensive_visualization.py` | Visualization generation script |
 | `galaxy_phase_transition_test.py` | Galaxy-level independence test |
 | `phase_transition_rigorous_test.py` | Rigorous breakpoint vs inner/outer analysis |
 | `phase_transition_upgraded_test.py` | Upgraded ΔAIC controls + kink vs curvature |
-| `smooth_transition_analysis.py` | Smooth transition + galaxy property correlations |
+| `smooth_transition_analysis.py` | Initial smooth transition analysis |
+| `improved_smooth_analysis.py` | **FDR-corrected sigmoid analysis (FINAL)** |
 
 ---
 
@@ -422,7 +432,8 @@ python fair_baseline_benchmark.py
 python galaxy_phase_transition_test.py  # Galaxy-level independence test
 python phase_transition_rigorous_test.py  # Rigorous breakpoint analysis
 python phase_transition_upgraded_test.py  # Upgraded ΔAIC + kink vs curvature
-python smooth_transition_analysis.py  # Smooth model + galaxy correlations (FINAL)
+python smooth_transition_analysis.py  # Initial smooth model analysis
+python improved_smooth_analysis.py  # FDR-corrected sigmoid analysis (FINAL)
 ```
 
 ---
