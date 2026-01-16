@@ -13,7 +13,7 @@
 This paper presents an independent verification and critical analysis of the "Gravitational Overflow Hypothesis" - an exploratory hypothesis proposing that a simple composite coordinate organizes rotation-curve behavior in spiral galaxies. Through rigorous statistical analysis of the SPARC galaxy database (143 galaxies with sufficient data points), we find:
 
 **What IS supported:**
-1. Within individual galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits rotation curves well (median R² = 0.97, in-sample)
+1. Within individual galaxies, a sigmoid-like transition in x = V̂_bar + R̂ fits rotation curves well (median R² = 0.97, in-sample; not cross-validated)
 2. Sigmoid significantly outperforms linear within galaxies (97.5% of cases, p < 0.0001)
 3. A galaxy-level *low-x vs high-x velocity separation* is present (Wilcoxon p ≈ 1.77×10⁻²⁷), consistent with a smooth nonlinear transition
 
@@ -43,7 +43,7 @@ However, observations consistently reveal that rotation curves remain remarkably
 
 ### 1.2 The Gravitational Overflow Hypothesis
 
-This investigation examines a third possibility proposed by the "Gravitational Overflow Hypothesis": that the relationship between mass, radius, and velocity might operate according to discrete digital logic rather than continuous physical laws. Specifically, we test the claim that:
+This investigation tests the "Gravitational Overflow Hypothesis," which proposes that the relationship between mass, radius, and velocity might operate according to discrete digital logic rather than continuous physical laws. Specifically, we evaluate the claim that:
 
 > When the normalized sum of baryonic velocity and radius exceeds a critical threshold (1.0), the galactic system "latches" into a high-velocity state, creating the flat rotation curve.
 
@@ -119,6 +119,8 @@ The central test examines whether the normalized sum creates a distinct separati
 
 This extremely low p-value confirms that the velocity separation is statistically significant — points above the threshold exhibit systematically higher velocities. However, this does NOT distinguish between a discrete "phase transition" and a smooth nonlinear relationship.
 
+**Caveat:** With ~3,300 pooled data points, even small effects produce extreme p-values. For a test that treats each galaxy as an independent unit (avoiding pseudo-replication), see **Section 3.7** (galaxy-level p = 1.77×10⁻²⁷, still highly significant).
+
 ### 3.3 Threshold Optimization
 
 Sweeping threshold values from 0.5 to 1.5 revealed:
@@ -143,17 +145,11 @@ We compared five predictive models across all 171 galaxies (note: later sigmoid 
 
 **Key Finding:** The Overflow model outperforms Newtonian predictions in **168/171 galaxies (98.2%)**, achieving a **50.3% reduction** in average prediction error.
 
-**Model fitting details:** For each model, V_flat (the asymptotic velocity) is estimated per galaxy from the data. The "Overflow Latch" model fits a threshold-based piecewise function; the "Newtonian" baseline uses V_bar directly. All models have at least one fitted parameter per galaxy.
+**Model fitting details:** For each model, V_flat (the asymptotic velocity) is estimated per galaxy as the **mean of V_obs in the overflow region** (points where x ≥ 1.0). If no points exceed the threshold, the mean of the outer 30% of radii is used. The "Overflow Latch" model fits a threshold-based piecewise function; the "Newtonian" baseline uses V_bar directly. All models have at least one fitted parameter per galaxy.
 
-### 3.5 Bit-Level Pattern Analysis (Artifact Investigation)
+### 3.5 Bit-Level Pattern Analysis (Summary)
 
-The original hypothesis proposed "digital" behavior at the bit level. We tested this by digitizing velocities to 8-bit representation and comparing with carry-out logic:
-
-| Bit Position | Description | Carry-Out Match Rate |
-|--------------|-------------|---------------------|
-| Bit 7 (MSB) | Most Significant | **70.2%** |
-
-This correlation exceeds the 50% expected by chance. **However**, subsequent analysis (Section 3.9) showed that smooth curvature fits better than discrete kinks, so this pattern is better explained as an artifact of the smooth nonlinear relationship rather than evidence of "digital" physics. **Conclusion:** The bit-level correlation is not meaningful evidence for discrete physics.
+The original hypothesis proposed "digital" behavior at the bit level. When digitizing velocities to 8-bit representation and comparing with carry-out logic, the MSB shows 70.2% match rate (exceeding 50% chance). **However**, subsequent analysis (Section 3.9) showed that smooth curvature fits better than discrete kinks, so this pattern is better explained as an artifact of the smooth nonlinear relationship. **Conclusion:** The bit-level correlation is not meaningful evidence for discrete physics. See **Appendix B** for full details.
 
 ### 3.6 Model Robustness
 
@@ -501,7 +497,29 @@ The Gravitational Overflow Hypothesis is a **useful per-galaxy approximation** t
 
 ---
 
-## Appendix B: Reproducibility
+## Appendix B: Bit-Level Pattern Analysis (Full Details)
+
+The original "Gravitational Overflow Hypothesis" proposed that galactic rotation curves exhibit discrete digital behavior at the bit level. We tested this by:
+
+1. Digitizing normalized velocities to 8-bit representation (0-255)
+2. Computing expected "carry-out" bit from normalized baryonic input
+3. Comparing observed MSB with predicted carry-out
+
+| Bit Position | Description | Carry-Out Match Rate |
+|--------------|-------------|---------------------|
+| Bit 7 (MSB) | Most Significant | **70.2%** |
+| Bit 6 | Second | 58.1% |
+| Bit 5 | Third | 52.3% |
+
+The MSB correlation (70.2%) exceeds chance (50%), but this is fully explained by the smooth nonlinear relationship between x and V_obs. When x is high, both the MSB and the "carry-out" tend to be 1; when x is low, both tend to be 0. This correlation does not require discrete physics.
+
+**Critical test:** Piecewise (discrete kink) vs Quadratic (smooth curvature) — Quadratic wins in 61.2% of galaxies (Wilcoxon p = 3.4×10⁻⁴). The data favor smooth transitions over discrete breaks.
+
+**Conclusion:** The bit-level pattern is an artifact of the underlying smooth nonlinear relationship, not evidence of digital physics.
+
+---
+
+## Appendix C: Reproducibility
 
 All analyses can be reproduced using:
 
